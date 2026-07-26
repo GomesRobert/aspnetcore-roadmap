@@ -71,6 +71,8 @@ flowchart TB
 
 **Caminho essencial:** Git → HTTP → C# → .NET → ASP.NET Core → SQL → Entity Framework Core → testes → Docker.
 
+<br />
+
 <details>
 <summary><strong>Ver índice das macroáreas</strong></summary>
 
@@ -107,6 +109,8 @@ Use estas trilhas como **pontos de entrada**, não como descrições rígidas de
 
 <a id="trilha-junior"></a>
 
+<br />
+
 <details>
 <summary><strong>🟢 Desenvolvedor Júnior</strong> — construa uma base sólida e entregue sua primeira API completa.</summary>
 
@@ -131,6 +135,8 @@ Use estas trilhas como **pontos de entrada**, não como descrições rígidas de
 
 <a id="trilha-pleno"></a>
 
+<br />
+
 <details>
 <summary><strong>🔵 Desenvolvedor Pleno</strong> — aprenda a evoluir, integrar e operar aplicações.</summary>
 
@@ -153,6 +159,8 @@ Use estas trilhas como **pontos de entrada**, não como descrições rígidas de
 </details>
 
 <a id="trilha-senior"></a>
+
+<br />
 
 <details>
 <summary><strong>🟣 Desenvolvedor Sênior</strong> — aprofunde decisões de arquitetura, escala e confiabilidade.</summary>
@@ -193,6 +201,8 @@ Os 43 módulos estão agrupados por assunto. Abra somente o módulo que você es
 Construa a base comum a qualquer backend: Git, internet, HTTP, APIs, estruturas de dados e algoritmos.
 
 <a id="modulo-01"></a>
+
+<br />
 
 <details>
 <summary><strong>01 · Fundamentos de Desenvolvimento</strong></summary>
@@ -318,6 +328,8 @@ O(n²)
 
 </details>
 
+---
+
 <a id="linguagem-e-plataforma"></a>
 
 ### 💻 2. Linguagem e plataforma
@@ -325,6 +337,8 @@ O(n²)
 Aprenda C# moderno e entenda como SDK, runtime, CLI e gerenciamento de memória se relacionam.
 
 <a id="modulo-02"></a>
+
+<br />
 
 <details>
 <summary><strong>02 · C# 14</strong></summary>
@@ -476,6 +490,8 @@ Assincronismo
 
 <a id="modulo-03"></a>
 
+<br />
+
 <details>
 <summary><strong>03 · Ecossistema .NET 10</strong></summary>
 
@@ -562,6 +578,8 @@ dotnet reference remove
 
 </details>
 
+---
+
 <a id="desenvolvimento-web"></a>
 
 ### 🌐 3. Desenvolvimento Web
@@ -569,6 +587,8 @@ dotnet reference remove
 Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, validação e segurança.
 
 <a id="modulo-04"></a>
+
+<br />
 
 <details>
 <summary><strong>04 · ASP.NET Core 10</strong></summary>
@@ -607,6 +627,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 
 <a id="modulo-05"></a>
 
+<br />
+
 <details>
 <summary><strong>05 · Configuration</strong></summary>
 
@@ -637,6 +659,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 </details>
 
 <a id="modulo-06"></a>
+
+<br />
 
 <details>
 <summary><strong>06 · ASP.NET Core Pipeline</strong></summary>
@@ -675,6 +699,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 
 <a id="modulo-07"></a>
 
+<br />
+
 <details>
 <summary><strong>07 · OpenAPI e Documentação</strong></summary>
 
@@ -707,6 +733,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 
 <a id="modulo-08"></a>
 
+<br />
+
 <details>
 <summary><strong>08 · Validação</strong></summary>
 
@@ -733,6 +761,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 </details>
 
 <a id="modulo-09"></a>
+
+<br />
 
 <details>
 <summary><strong>09 · Segurança</strong></summary>
@@ -779,6 +809,8 @@ Exemplos:
 
 </details>
 
+---
+
 <a id="dados-e-persistencia"></a>
 
 ### 🗄️ 4. Dados e persistência
@@ -786,6 +818,8 @@ Exemplos:
 Modele dados, escreva SQL e trabalhe com Entity Framework Core, Dapper e diferentes bancos.
 
 <a id="modulo-10"></a>
+
+<br />
 
 <details>
 <summary><strong>10 · SQL</strong></summary>
@@ -838,6 +872,8 @@ Modele dados, escreva SQL e trabalhe com Entity Framework Core, Dapper e diferen
 
 <a id="modulo-11"></a>
 
+<br />
+
 <details>
 <summary><strong>11 · Bancos de Dados</strong></summary>
 
@@ -886,6 +922,8 @@ Conhecer pelo menos uma:
 </details>
 
 <a id="modulo-12"></a>
+
+<br />
 
 <details>
 <summary><strong>12 · Entity Framework Core 10</strong></summary>
@@ -946,6 +984,8 @@ Conhecer pelo menos uma:
 
 <a id="modulo-13"></a>
 
+<br />
+
 <details>
 <summary><strong>13 · Dapper</strong></summary>
 
@@ -971,6 +1011,8 @@ ADO.NET
 
 </details>
 
+---
+
 <a id="qualidade-e-arquitetura"></a>
 
 ### 🧠 5. Qualidade e arquitetura
@@ -978,6 +1020,8 @@ ADO.NET
 Melhore design, coesão e manutenibilidade antes de avançar para estilos arquiteturais complexos.
 
 <a id="modulo-14"></a>
+
+<br />
 
 <details>
 <summary><strong>14 · Clean Code</strong></summary>
@@ -1011,6 +1055,8 @@ Conhecer:
 
 <a id="modulo-15"></a>
 
+<br />
+
 <details>
 <summary><strong>15 · SOLID</strong></summary>
 
@@ -1028,6 +1074,8 @@ Conhecer:
 </details>
 
 <a id="modulo-16"></a>
+
+<br />
 
 <details>
 <summary><strong>16 · Design Patterns</strong></summary>
@@ -1061,6 +1109,8 @@ Conhecer:
 
 <a id="modulo-17"></a>
 
+<br />
+
 <details>
 <summary><strong>17 · Arquitetura</strong></summary>
 
@@ -1090,6 +1140,8 @@ Conhecer:
 
 <a id="modulo-18"></a>
 
+<br />
+
 <details>
 <summary><strong>18 · Domain-Driven Design</strong></summary>
 
@@ -1109,6 +1161,8 @@ Conhecer:
 
 </details>
 
+---
+
 <a id="testes"></a>
 
 ### 🧪 6. Testes
@@ -1116,6 +1170,8 @@ Conhecer:
 Valide comportamento, integrações, contratos, arquitetura e performance com testes automatizados.
 
 <a id="modulo-19"></a>
+
+<br />
 
 <details>
 <summary><strong>19 · Testes Automatizados</strong></summary>
@@ -1196,6 +1252,8 @@ Escolha um:
 
 </details>
 
+---
+
 <a id="integracoes-e-resiliencia"></a>
 
 ### 🔌 7. Integrações e resiliência
@@ -1203,6 +1261,8 @@ Escolha um:
 Consuma serviços, trate falhas e escolha protocolos, mapeamento e processamento em background.
 
 <a id="modulo-20"></a>
+
+<br />
 
 <details>
 <summary><strong>20 · API Clients e Comunicação</strong></summary>
@@ -1225,6 +1285,8 @@ Consuma serviços, trate falhas e escolha protocolos, mapeamento e processamento
 </details>
 
 <a id="modulo-21"></a>
+
+<br />
 
 <details>
 <summary><strong>21 · Resiliência</strong></summary>
@@ -1256,6 +1318,8 @@ Conhecer:
 
 <a id="modulo-22"></a>
 
+<br />
+
 <details>
 <summary><strong>22 · Idempotência</strong></summary>
 
@@ -1282,6 +1346,8 @@ API NÃO pode processar duas vezes
 </details>
 
 <a id="modulo-23"></a>
+
+<br />
 
 <details>
 <summary><strong>23 · Protocolos e Comunicação</strong></summary>
@@ -1322,6 +1388,8 @@ SignalR     → abstração de comunicação em tempo real
 
 <a id="modulo-24"></a>
 
+<br />
+
 <details>
 <summary><strong>24 · Object Mapping</strong></summary>
 
@@ -1341,6 +1409,8 @@ SignalR     → abstração de comunicação em tempo real
 
 <a id="modulo-25"></a>
 
+<br />
+
 <details>
 <summary><strong>25 · Background Processing</strong></summary>
 
@@ -1356,6 +1426,8 @@ SignalR     → abstração de comunicação em tempo real
 
 </details>
 
+---
+
 <a id="performance-cache-e-operacao"></a>
 
 ### ⚡ 8. Performance, cache e operação
@@ -1363,6 +1435,8 @@ SignalR     → abstração de comunicação em tempo real
 Prepare aplicações para produção com cache, logs, observabilidade, health checks e concorrência.
 
 <a id="modulo-26"></a>
+
+<br />
 
 <details>
 <summary><strong>26 · Cache</strong></summary>
@@ -1410,6 +1484,8 @@ Prepare aplicações para produção com cache, logs, observabilidade, health ch
 
 <a id="modulo-27"></a>
 
+<br />
+
 <details>
 <summary><strong>27 · Logging</strong></summary>
 
@@ -1454,6 +1530,8 @@ _logger.LogInformation(
 </details>
 
 <a id="modulo-28"></a>
+
+<br />
 
 <details>
 <summary><strong>28 · Observabilidade</strong></summary>
@@ -1520,6 +1598,8 @@ _logger.LogInformation(
 
 <a id="modulo-29"></a>
 
+<br />
+
 <details>
 <summary><strong>29 · Health Checks</strong></summary>
 
@@ -1543,6 +1623,8 @@ Readiness
 </details>
 
 <a id="modulo-30"></a>
+
+<br />
 
 <details>
 <summary><strong>30 · Performance</strong></summary>
@@ -1583,6 +1665,8 @@ Memory
 
 <a id="modulo-31"></a>
 
+<br />
+
 <details>
 <summary><strong>31 · Concorrência</strong></summary>
 
@@ -1603,6 +1687,8 @@ Memory
 
 </details>
 
+---
+
 <a id="mensageria-e-sistemas-distribuidos"></a>
 
 ### 📨 9. Mensageria e sistemas distribuídos
@@ -1610,6 +1696,8 @@ Memory
 Entenda entrega, duplicidade, idempotência e padrões para comunicação assíncrona confiável.
 
 <a id="modulo-32"></a>
+
+<br />
 
 <details>
 <summary><strong>32 · Mensageria</strong></summary>
@@ -1663,6 +1751,8 @@ Aprender pelo menos um:
 
 <a id="modulo-33"></a>
 
+<br />
+
 <details>
 <summary><strong>33 · Patterns para Sistemas Distribuídos</strong></summary>
 
@@ -1683,6 +1773,8 @@ Aprender pelo menos um:
 
 </details>
 
+---
+
 <a id="devops"></a>
 
 ### 📦 10. DevOps e cloud
@@ -1690,6 +1782,8 @@ Aprender pelo menos um:
 Containerize, automatize builds e entregas e publique a aplicação em uma nuvem.
 
 <a id="modulo-34"></a>
+
+<br />
 
 <details>
 <summary><strong>34 · Docker</strong></summary>
@@ -1732,6 +1826,8 @@ Conseguir criar algo semelhante a:
 </details>
 
 <a id="modulo-35"></a>
+
+<br />
 
 <details>
 <summary><strong>35 · CI/CD</strong></summary>
@@ -1776,6 +1872,8 @@ Escolha pelo menos uma:
 
 <a id="modulo-36"></a>
 
+<br />
+
 <details>
 <summary><strong>36 · Cloud</strong></summary>
 
@@ -1809,6 +1907,8 @@ Escolha pelo menos uma:
 
 </details>
 
+---
+
 <a id="arquitetura-avancada"></a>
 
 ### 🏗️ 11. Arquitetura avançada
@@ -1816,6 +1916,8 @@ Escolha pelo menos uma:
 Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orientadas a eventos.
 
 <a id="modulo-37"></a>
+
+<br />
 
 <details>
 <summary><strong>37 · Microservices</strong></summary>
@@ -1847,6 +1949,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 </details>
 
 <a id="modulo-38"></a>
+
+<br />
 
 <details>
 <summary><strong>38 · Kubernetes</strong></summary>
@@ -1888,6 +1992,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 
 <a id="modulo-39"></a>
 
+<br />
+
 <details>
 <summary><strong>39 · Aspire</strong></summary>
 
@@ -1910,6 +2016,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 </details>
 
 <a id="modulo-40"></a>
+
+<br />
 
 <details>
 <summary><strong>40 · System Design</strong></summary>
@@ -1957,6 +2065,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 
 <a id="modulo-41"></a>
 
+<br />
+
 <details>
 <summary><strong>41 · API Design</strong></summary>
 
@@ -1984,6 +2094,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 
 <a id="modulo-42"></a>
 
+<br />
+
 <details>
 <summary><strong>42 · Arquitetura Orientada a Eventos</strong></summary>
 
@@ -1997,6 +2109,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 
 </details>
 
+---
+
 <a id="ia-e-ferramentas-modernas"></a>
 
 ### 🤖 12. IA e ferramentas modernas
@@ -2004,6 +2118,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 Use assistentes com senso crítico e conheça os fundamentos para integrar LLMs às aplicações.
 
 <a id="modulo-43"></a>
+
+<br />
 
 <details>
 <summary><strong>43 · IA e LLMs</strong></summary>
@@ -2063,6 +2179,8 @@ flowchart TB
 
 <a id="etapa-01"></a>
 
+<br />
+
 <details>
 <summary><strong>Etapa 01 · API Base</strong></summary>
 
@@ -2086,6 +2204,8 @@ Utilizando:
 
 <a id="etapa-02"></a>
 
+<br />
+
 <details>
 <summary><strong>Etapa 02 · Qualidade da API</strong></summary>
 
@@ -2103,6 +2223,8 @@ Adicionar:
 
 <a id="etapa-03"></a>
 
+<br />
+
 <details>
 <summary><strong>Etapa 03 · Testes</strong></summary>
 
@@ -2115,6 +2237,8 @@ Adicionar:
 </details>
 
 <a id="etapa-04"></a>
+
+<br />
 
 <details>
 <summary><strong>Etapa 04 · Cache</strong></summary>
@@ -2139,6 +2263,8 @@ Return    Database
 
 <a id="etapa-05"></a>
 
+<br />
+
 <details>
 <summary><strong>Etapa 05 · Processamento Assíncrono</strong></summary>
 
@@ -2159,6 +2285,8 @@ Message Broker
 
 <a id="etapa-06"></a>
 
+<br />
+
 <details>
 <summary><strong>Etapa 06 · Resiliência</strong></summary>
 
@@ -2173,6 +2301,8 @@ Adicionar:
 </details>
 
 <a id="etapa-07"></a>
+
+<br />
 
 <details>
 <summary><strong>Etapa 07 · Containers</strong></summary>
@@ -2191,6 +2321,8 @@ Docker Compose
 
 <a id="etapa-08"></a>
 
+<br />
+
 <details>
 <summary><strong>Etapa 08 · Observabilidade</strong></summary>
 
@@ -2208,6 +2340,8 @@ OpenTelemetry
 </details>
 
 <a id="etapa-09"></a>
+
+<br />
 
 <details>
 <summary><strong>Etapa 09 · CI/CD</strong></summary>
@@ -2229,6 +2363,8 @@ Deploy
 </details>
 
 <a id="etapa-10"></a>
+
+<br />
 
 <details>
 <summary><strong>Etapa 10 · Arquitetura Avançada</strong></summary>
@@ -2258,6 +2394,8 @@ Kubernetes
 
 > **Regra de ouro:** conceito → implementação → ferramenta.
 
+<br />
+
 <details>
 <summary><strong>Perguntas para avaliar uma nova tecnologia</strong></summary>
 
@@ -2276,6 +2414,8 @@ Kubernetes
 ## 🏆 Resultado esperado
 
 Ao final da trilha, você deve conseguir construir, entregar e evoluir uma aplicação backend com decisões técnicas justificadas.
+
+<br />
 
 <details>
 <summary><strong>Ver competências finais</strong></summary>
