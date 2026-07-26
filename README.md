@@ -1,56 +1,205 @@
 <div align="center">
-
-# 🚀 ASP.NET Core Developer Roadmap
-
-### .NET 10 • C# 14 • ASP.NET Core 10
-
-Roadmap de estudos para desenvolvimento **Backend com o ecossistema .NET**.
-
+  <h1>🚀 ASP.NET Core Developer Roadmap</h1>
+  <p><strong>Edição 2026 · .NET 10 · C# 14 · ASP.NET Core 10</strong></p>
+  <p>Uma trilha progressiva e prática para desenvolver APIs e backends modernos com o ecossistema .NET.</p>
+  <p>
+    <a href="https://learn.microsoft.com/dotnet/core/whats-new/dotnet-10/overview"><img alt=".NET 10" src="https://img.shields.io/badge/.NET-10-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"></a>
+    <a href="https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-14"><img alt="C# 14" src="https://img.shields.io/badge/C%23-14-239120?style=flat-square&amp;logo=csharp&amp;logoColor=white"></a>
+    <a href="https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-10.0?view=aspnetcore-10.0"><img alt="ASP.NET Core 10" src="https://img.shields.io/badge/ASP.NET_Core-10-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"></a>
+    <img alt="Idioma PT-BR" src="https://img.shields.io/badge/idioma-PT--BR-0A66C2?style=flat-square">
+  </p>
+  <p>
+    <a href="#comece-aqui">Comece por aqui</a> ·
+    <a href="#visao-geral">Visão geral</a> ·
+    <a href="#trilhas-por-nivel">Trilhas por nível</a> ·
+    <a href="#roadmap-detalhado">Roadmap detalhado</a> ·
+    <a href="#projeto-guia">Projeto guia</a>
+  </p>
 </div>
 
-<br />
+---
+
+<a id="comece-aqui"></a>
+
+## 👋 Comece por aqui
+
+Este roadmap foi feito para quem está começando no backend com .NET e para quem já trabalha na área, mas quer organizar os próximos passos.
+
+1. **Escolha seu ponto de entrada.** Use as [trilhas por nível](#trilhas-por-nivel) para decidir onde começar.
+2. **Estude um módulo por vez.** Priorize os itens essenciais e abra os tópicos avançados quando eles resolverem um problema real.
+3. **Pratique continuamente.** Evolua o [projeto guia](#projeto-guia) enquanto avança pela trilha.
 
 > [!NOTE]
-> Este roadmap tem como objetivo orientar desenvolvedores sobre **o que aprender**, **em qual ordem aprender** e **quais assuntos podem ser estudados posteriormente**.
->
-> Ele não deve ser interpretado como uma lista de tecnologias que precisam ser dominadas antes de começar a trabalhar.
+> O objetivo é orientar **o que aprender**, **em qual ordem** e **o que pode ficar para depois**. Este não é um checklist de pré-requisitos para conseguir um emprego.
 
----
+### Como ler as prioridades
 
-## 📌 Legenda
-
-| Nível | Significado |
-|---|---|
-| 🔴 **Essencial** | Deve saber |
-| 🟠 **Importante** | Deve conhecer |
-| ⚪ **Opcional / Avançado** | Aprender posteriormente |
-
-<br />
-
-## 🗺️ Visão Geral
-
-TODO
-
-<br />
+| Sinal | Prioridade | Como estudar |
+| :---: | :--- | :--- |
+| 🔴 | **Essencial** | Aprenda e pratique |
+| 🟠 | **Importante** | Conheça e aprofunde conforme a necessidade |
+| ⚪ | **Opcional / avançado** | Deixe para um momento posterior |
 
 > [!TIP]
-> **Não tente estudar tudo ao mesmo tempo.**
->
-> Use o roadmap como uma sequência de evolução. Aprenda os fundamentos, pratique em projetos reais e avance conforme os problemas forem aparecendo.
+> Não tente estudar tudo ao mesmo tempo. Prefira o ciclo **conceito → prática → feedback → aprofundamento**.
 
 ---
 
-# 🧱 Fundamentos
+<a id="visao-geral"></a>
+
+## 🗺️ Visão geral
+
+A jornada começa nos fundamentos, passa pela construção de APIs e termina em operação, escala e decisões arquiteturais.
+
+```mermaid
+flowchart TB
+  subgraph base["Base"]
+    direction LR
+    A["Fundamentos<br/>01"] --> B["C# e .NET<br/>02–03"] --> C["Web e APIs<br/>04–09"] --> D["Dados<br/>10–13"]
+  end
+  subgraph producao["Aplicações prontas para produção"]
+    direction LR
+    E["Qualidade e testes<br/>14–19"] --> F["Integrações e operação<br/>20–31"] --> G["Sistemas distribuídos<br/>32–33"]
+  end
+  subgraph escala["Entrega e escala"]
+    direction LR
+    H["DevOps e cloud<br/>34–36"] --> I["Arquitetura e IA<br/>37–43"]
+  end
+  D --> E
+  G --> H
+```
+
+**Caminho essencial:** Git → HTTP → C# → .NET → ASP.NET Core → SQL → Entity Framework Core → testes → Docker.
+
+<details>
+<summary><strong>Ver índice das macroáreas</strong></summary>
+
+| Macroárea | Módulos |
+| :--- | :---: |
+| [🧱 Fundamentos](#fundamentos) | 01 |
+| [💻 Linguagem e plataforma](#linguagem-e-plataforma) | 02–03 |
+| [🌐 Desenvolvimento Web](#desenvolvimento-web) | 04–09 |
+| [🗄️ Dados e persistência](#dados-e-persistencia) | 10–13 |
+| [🧠 Qualidade e arquitetura](#qualidade-e-arquitetura) | 14–18 |
+| [🧪 Testes](#testes) | 19 |
+| [🔌 Integrações e resiliência](#integracoes-e-resiliencia) | 20–25 |
+| [⚡ Performance, cache e operação](#performance-cache-e-operacao) | 26–31 |
+| [📨 Mensageria e sistemas distribuídos](#mensageria-e-sistemas-distribuidos) | 32–33 |
+| [📦 DevOps e cloud](#devops) | 34–36 |
+| [🏗️ Arquitetura avançada](#arquitetura-avancada) | 37–42 |
+| [🤖 IA e ferramentas modernas](#ia-e-ferramentas-modernas) | 43 |
+
+</details>
 
 ---
 
-## 01. Fundamentos de Desenvolvimento
+<a id="trilhas-por-nivel"></a>
+
+## 🧭 Trilhas por nível
+
+Use estas trilhas como **pontos de entrada**, não como descrições rígidas de cargo. Experiência profissional depende de contexto, autonomia e impacto — não apenas de uma lista de tecnologias.
+
+| Trilha | Foco principal | Marco prático |
+| :--- | :--- | :--- |
+| [Júnior](#trilha-junior) | Fundamentos, primeira API, dados e testes | Entregar uma API funcional e containerizada |
+| [Pleno](#trilha-pleno) | Arquitetura, resiliência, mensageria e operação | Evoluir e operar uma aplicação em produção |
+| [Sênior](#trilha-senior) | System design, escala e decisões arquiteturais | Projetar sistemas e justificar trade-offs |
+
+<a id="trilha-junior"></a>
+
+<details>
+<summary><strong>🟢 Desenvolvedor Júnior</strong> — construa uma base sólida e entregue sua primeira API completa.</summary>
+
+### Checklist de referência
+
+- [ ] Git
+- [ ] HTTP
+- [ ] C#
+- [ ] Orientação a Objetos
+- [ ] LINQ
+- [ ] Async / Await
+- [ ] ASP.NET Core
+- [ ] REST API
+- [ ] Dependency Injection
+- [ ] SQL
+- [ ] Entity Framework Core
+- [ ] Unit Tests
+- [ ] Integration Tests
+- [ ] Docker básico
+
+</details>
+
+<a id="trilha-pleno"></a>
+
+<details>
+<summary><strong>🔵 Desenvolvedor Pleno</strong> — aprenda a evoluir, integrar e operar aplicações.</summary>
+
+### Checklist de referência
+
+- [ ] Clean Architecture / Vertical Slice
+- [ ] Design Patterns
+- [ ] Redis
+- [ ] IHttpClientFactory
+- [ ] Resiliência
+- [ ] RabbitMQ / Service Bus / Kafka
+- [ ] MassTransit
+- [ ] Outbox
+- [ ] Docker
+- [ ] CI/CD
+- [ ] OpenTelemetry
+- [ ] Cloud
+- [ ] Performance
+
+</details>
+
+<a id="trilha-senior"></a>
+
+<details>
+<summary><strong>🟣 Desenvolvedor Sênior</strong> — aprofunde decisões de arquitetura, escala e confiabilidade.</summary>
+
+### Checklist de referência
+
+- [ ] System Design
+- [ ] Distributed Systems
+- [ ] Eventual Consistency
+- [ ] Distributed Transactions
+- [ ] Saga
+- [ ] Outbox
+- [ ] Idempotência
+- [ ] Performance
+- [ ] Observabilidade
+- [ ] Microservices
+- [ ] Kubernetes
+- [ ] Cloud Architecture
+- [ ] Scalability
+- [ ] High Availability
+- [ ] Disaster Recovery
+- [ ] SLA / SLO / SLI
+
+</details>
+
+---
+
+<a id="roadmap-detalhado"></a>
+
+## 📚 Roadmap detalhado
+
+Os 43 módulos estão agrupados por assunto. Abra somente o módulo que você está estudando; as caixas permanecem desmarcadas para que você possa copiar ou fazer um fork e acompanhar o próprio progresso.
+
+<a id="fundamentos"></a>
+
+### 🧱 1. Fundamentos
+
+Construa a base comum a qualquer backend: Git, internet, HTTP, APIs, estruturas de dados e algoritmos.
+
+<a id="modulo-01"></a>
+
+<details>
+<summary><strong>01 · Fundamentos de Desenvolvimento</strong></summary>
 
 > Antes de aprender .NET, é importante conhecer alguns fundamentos que independem de linguagem.
 
-<br />
-
-### 🔴 Git
+#### 🔴 Essencial · Git
 
 - [ ] Git
 - [ ] Repository
@@ -63,15 +212,13 @@ TODO
 - [ ] Merge Conflict
 - [ ] `.gitignore`
 
-#### 🟠 Estratégias de Branch
+##### 🟠 Importante · Estratégias de Branch
 
 - [ ] Git Flow
 - [ ] GitHub Flow
 - [ ] Trunk Based Development
 
-<br />
-
-### 🔴 Internet e HTTP
+#### 🔴 Essencial · Internet e HTTP
 
 - [ ] Client / Server
 - [ ] IP
@@ -82,7 +229,7 @@ TODO
 - [ ] HTTPS
 - [ ] TLS
 
-#### Métodos HTTP
+##### Métodos HTTP
 
 - [ ] GET
 - [ ] POST
@@ -92,7 +239,7 @@ TODO
 - [ ] OPTIONS
 - [ ] HEAD
 
-#### Status Codes
+##### Status Codes
 
 - [ ] 1xx
 - [ ] 2xx
@@ -122,9 +269,7 @@ Entender principalmente:
 504 Gateway Timeout
 ```
 
-<br />
-
-### 🔴 APIs e REST
+#### 🔴 Essencial · APIs e REST
 
 - [ ] O que é uma API
 - [ ] REST
@@ -140,9 +285,7 @@ Entender principalmente:
 - [ ] Stateless
 - [ ] Idempotência
 
-<br />
-
-### 🟠 Estruturas de Dados
+#### 🟠 Importante · Estruturas de Dados
 
 - [ ] Array
 - [ ] List
@@ -155,9 +298,7 @@ Entender principalmente:
 - [ ] Tree
 - [ ] Graph
 
-<br />
-
-### 🟠 Algoritmos
+#### 🟠 Importante · Algoritmos
 
 - [ ] Busca
 - [ ] Ordenação
@@ -175,17 +316,20 @@ O(n log n)
 O(n²)
 ```
 
-<br />
+</details>
 
----
+<a id="linguagem-e-plataforma"></a>
 
-# 💻 Linguagem e Plataforma
+### 💻 2. Linguagem e plataforma
 
----
+Aprenda C# moderno e entenda como SDK, runtime, CLI e gerenciamento de memória se relacionam.
 
-## 02. C# 14
+<a id="modulo-02"></a>
 
-### 🔴 Fundamentos
+<details>
+<summary><strong>02 · C# 14</strong></summary>
+
+#### 🔴 Essencial · Fundamentos
 
 - [ ] Variáveis
 - [ ] Tipos primitivos
@@ -201,9 +345,7 @@ O(n²)
 - [ ] Named Arguments
 - [ ] Optional Parameters
 
-<br />
-
-### 🔴 Orientação a Objetos
+#### 🔴 Essencial · Orientação a Objetos
 
 - [ ] Classes
 - [ ] Objetos
@@ -217,9 +359,7 @@ O(n²)
 - [ ] Interfaces
 - [ ] Classes abstratas
 
-<br />
-
-### 🔴 Collections
+#### 🔴 Essencial · Collections
 
 - [ ] Array
 - [ ] List
@@ -228,18 +368,14 @@ O(n²)
 - [ ] Queue
 - [ ] Stack
 
-<br />
-
-### 🔴 Generics
+#### 🔴 Essencial · Generics
 
 - [ ] Generic Classes
 - [ ] Generic Methods
 - [ ] Generic Interfaces
 - [ ] Constraints
 
-<br />
-
-### 🔴 LINQ
+#### 🔴 Essencial · LINQ
 
 - [ ] Where
 - [ ] Select
@@ -265,9 +401,7 @@ Entender:
 - [ ] IQueryable
 - [ ] Deferred Execution
 
-<br />
-
-### 🔴 Exceptions
+#### 🔴 Essencial · Exceptions
 
 - [ ] try
 - [ ] catch
@@ -276,9 +410,7 @@ Entender:
 - [ ] Custom Exceptions
 - [ ] Exception Filters
 
-<br />
-
-### 🔴 Async / Await
+#### 🔴 Essencial · Async / Await
 
 - [ ] Task
 - [ ] Task<T>
@@ -298,9 +430,7 @@ Paralelismo
 Assincronismo
 ```
 
-<br />
-
-### 🟠 Recursos importantes da linguagem
+#### 🟠 Importante · Recursos importantes da linguagem
 
 - [ ] Records
 - [ ] Record Structs
@@ -316,9 +446,7 @@ Assincronismo
 - [ ] Expression Trees
 - [ ] Attributes
 
-<br />
-
-### 🟠 C# moderno
+#### 🟠 Importante · C# moderno
 
 - [ ] Primary Constructors
 - [ ] Collection Expressions
@@ -331,7 +459,7 @@ Assincronismo
 - [ ] `Span<T>`
 - [ ] `ReadOnlySpan<T>`
 
-#### C# 14
+##### C# 14
 
 - [ ] Extension Members
 - [ ] Field-backed Properties com `field`
@@ -344,13 +472,14 @@ Assincronismo
 - [ ] User-defined Compound Assignment Operators
 - [ ] Novas diretivas de pré-processador para File-based Apps
 
-<br />
+</details>
 
----
+<a id="modulo-03"></a>
 
-## 03. Ecossistema .NET 10
+<details>
+<summary><strong>03 · Ecossistema .NET 10</strong></summary>
 
-### 🔴 Conceitos
+#### 🔴 Essencial · Conceitos
 
 Entender a diferença entre:
 
@@ -362,21 +491,17 @@ Entender a diferença entre:
 - [ ] Garbage Collector
 - [ ] NuGet
 
-<br />
-
-### 🔴 Estrutura de projetos
+#### 🔴 Essencial · Estrutura de projetos
 
 - [ ] Solution
 - [ ] Project
-- [ ] `.slnx` — formato padrão de solução no .NET 10
+- [ ] `.slnx` — formato gerado por padrão por `dotnet new sln` no SDK .NET 10
 - [ ] `.sln` — formato tradicional
 - [ ] `.csproj`
 - [ ] PackageReference
 - [ ] ProjectReference
 
-<br />
-
-### 🔴 .NET CLI
+#### 🔴 Essencial · .NET CLI
 
 ```bash
 dotnet new
@@ -400,9 +525,7 @@ dotnet reference remove
 > No .NET 10, a CLI passou a oferecer a forma **substantivo primeiro** (`dotnet package add`, `dotnet reference add`).
 > Os comandos antigos, como `dotnet add package`, continuam funcionando como aliases.
 
-<br />
-
-### 🟠 File-based Apps
+#### 🟠 Importante · File-based Apps
 
 - [ ] Executar aplicações `.cs` sem `.csproj`
 - [ ] `dotnet run --file app.cs`
@@ -417,9 +540,7 @@ dotnet reference remove
 > [!TIP]
 > File-based Apps são úteis para scripts, utilitários, exemplos e aplicações pequenas sem a estrutura completa de um projeto tradicional.
 
-<br />
-
-### 🟠 Gerenciamento de memória
+#### 🟠 Importante · Gerenciamento de memória
 
 - [ ] Stack
 - [ ] Heap
@@ -430,29 +551,29 @@ dotnet reference remove
 - [ ] Finalizers
 - [ ] Memory Allocation
 
-<br />
-
-### ⚪ Avançado
+#### ⚪ Avançado
 
 - [ ] Reflection
 - [ ] Source Generators
-- [ ] Native AOT
-- [ ] Ahead-of-Time Compilation
+- [ ] Native AOT (Ahead-of-Time Compilation)
 - [ ] Assembly
 - [ ] IL
 - [ ] Roslyn
 
-<br />
+</details>
 
----
+<a id="desenvolvimento-web"></a>
 
-# 🌐 Desenvolvimento Web
+### 🌐 3. Desenvolvimento Web
 
----
+Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, validação e segurança.
 
-## 04. ASP.NET Core 10
+<a id="modulo-04"></a>
 
-### 🔴 Web API
+<details>
+<summary><strong>04 · ASP.NET Core 10</strong></summary>
+
+#### 🔴 Essencial · Web API
 
 - [ ] Criar uma Web API
 - [ ] Controllers
@@ -465,9 +586,7 @@ dotnet reference remove
 - [ ] Response
 - [ ] Status Codes
 
-<br />
-
-### 🔴 Dependency Injection
+#### 🔴 Essencial · Dependency Injection
 
 - [ ] Dependency Injection
 - [ ] Dependency Inversion
@@ -475,7 +594,7 @@ dotnet reference remove
 - [ ] IServiceCollection
 - [ ] IServiceProvider
 
-#### Lifetimes
+##### Lifetimes
 
 - [ ] Transient
 - [ ] Scoped
@@ -484,13 +603,14 @@ dotnet reference remove
 > [!IMPORTANT]
 > Não basta decorar os lifetimes. É importante entender **quando usar cada um** e quais problemas podem surgir ao misturá-los incorretamente.
 
-<br />
+</details>
 
----
+<a id="modulo-05"></a>
 
-## 05. Configuration
+<details>
+<summary><strong>05 · Configuration</strong></summary>
 
-### 🔴 Configurações
+#### 🔴 Essencial · Configurações
 
 - [ ] appsettings.json
 - [ ] appsettings.Development.json
@@ -501,14 +621,12 @@ dotnet reference remove
 - [ ] IOptionsSnapshot
 - [ ] IOptionsMonitor
 
-<br />
-
-### 🔴 Secrets
+#### 🔴 Essencial · Secrets
 
 - [ ] User Secrets
 - [ ] Environment Variables
 
-#### 🟠 Cloud
+##### 🟠 Importante · Cloud
 
 - [ ] Azure Key Vault
 - [ ] AWS Secrets Manager
@@ -516,46 +634,51 @@ dotnet reference remove
 > [!WARNING]
 > Nunca armazene senhas, tokens ou connection strings diretamente no código-fonte.
 
-<br />
+</details>
 
----
+<a id="modulo-06"></a>
 
-## 06. ASP.NET Core Pipeline
+<details>
+<summary><strong>06 · ASP.NET Core Pipeline</strong></summary>
 
-### 🔴 Middleware
+#### 🔴 Essencial · Middleware
 
 - [ ] Middleware
 - [ ] Request Pipeline
 - [ ] Middleware customizado
 - [ ] Exception Handling Middleware
 
-<br />
-
-### 🔴 Filters
+#### 🔴 Essencial · Filters (MVC / Controllers)
 
 - [ ] Authorization Filter
 - [ ] Action Filter
 - [ ] Exception Filter
 - [ ] Result Filter
 
-<br />
+#### 🔴 Essencial · Endpoint Filters (Minimal APIs)
 
-### 🔴 Error Handling
+- [ ] `IEndpointFilter`
+- [ ] `AddEndpointFilter`
+
+#### 🔴 Essencial · Error Handling
 
 - [ ] Global Exception Handling
+- [ ] `IExceptionHandler`
 - [ ] Problem Details
+- [ ] `AddProblemDetails`
 - [ ] `IProblemDetailsService`
 - [ ] RFC 9457
 - [ ] RFC 7807 — legado, substituído pelo RFC 9457
 - [ ] Padronização de erros
 
-<br />
+</details>
 
----
+<a id="modulo-07"></a>
 
-## 07. OpenAPI e Documentação
+<details>
+<summary><strong>07 · OpenAPI e Documentação</strong></summary>
 
-### 🔴 OpenAPI
+#### 🔴 Essencial · OpenAPI
 
 - [ ] OpenAPI
 - [ ] OpenAPI 3.1
@@ -566,7 +689,7 @@ dotnet reference remove
 - [ ] Request Schema
 - [ ] Response Schema
 
-### 🟠 Visualização e documentação interativa
+#### 🟠 Importante · Visualização e documentação interativa
 
 - [ ] Scalar
 - [ ] Swagger UI
@@ -574,31 +697,31 @@ dotnet reference remove
 - [ ] Examples
 - [ ] API Versioning
 
-### 🟠 Avançado
+#### 🟠 Importante · Avançado
 
 - [ ] Document Transformers
 - [ ] Operation Transformers
 - [ ] Schema Transformers
 
-<br />
+</details>
 
----
+<a id="modulo-08"></a>
 
-## 08. Validação
+<details>
+<summary><strong>08 · Validação</strong></summary>
 
-### 🔴 Validação nativa
+#### 🔴 Essencial · Validação nativa
 
 - [ ] Validação de Request
 - [ ] Data Annotations
-- [ ] `Microsoft.Extensions.Validation`
-- [ ] `AddValidation`
+- [ ] `Microsoft.Extensions.Validation` (Minimal APIs)
+- [ ] `AddValidation` (Minimal APIs)
 - [ ] Validação de parâmetros
 - [ ] Validação de tipos
 - [ ] Validação de propriedades
 - [ ] `IValidatableObject`
-- [ ] Validação de regras de negócio
 
-### 🟠 Bibliotecas
+#### 🟠 Importante · Bibliotecas
 
 - [ ] FluentValidation
 
@@ -607,24 +730,23 @@ dotnet reference remove
 >
 > No ASP.NET Core 10, Minimal APIs possuem suporte nativo à validação com `Microsoft.Extensions.Validation`.
 
-<br />
+</details>
 
----
+<a id="modulo-09"></a>
 
-## 09. Segurança
+<details>
+<summary><strong>09 · Segurança</strong></summary>
 
-### 🔴 Authentication e Authorization
+#### 🔴 Essencial · Autenticação e autorização
 
-- [ ] Authentication
-- [ ] Authorization
-- [ ] JWT
+- [ ] Authentication (autenticação)
+- [ ] Authorization (autorização)
+- [ ] Bearer tokens e validação de JWT
 - [ ] Claims
 - [ ] Roles
 - [ ] Policies
 
-<br />
-
-### 🟠 Identity
+#### 🟠 Importante · Identidade e federação
 
 - [ ] ASP.NET Core Identity
 - [ ] OAuth 2.0
@@ -638,9 +760,7 @@ Exemplos:
 - Auth0
 - OpenIddict
 
-<br />
-
-### 🔴 Segurança de APIs
+#### 🔴 Essencial · Segurança de APIs
 
 - [ ] CORS
 - [ ] CSRF
@@ -652,24 +772,25 @@ Exemplos:
 - [ ] Broken Access Control
 - [ ] Rate Limiting
 
-<br />
-
-### 🔴 OWASP
+#### 🔴 Essencial · OWASP
 
 - [ ] OWASP Top 10
 - [ ] OWASP API Security Top 10
 
-<br />
+</details>
 
----
+<a id="dados-e-persistencia"></a>
 
-# 🗄️ Dados e Persistência
+### 🗄️ 4. Dados e persistência
 
----
+Modele dados, escreva SQL e trabalhe com Entity Framework Core, Dapper e diferentes bancos.
 
-## 10. SQL
+<a id="modulo-10"></a>
 
-### 🔴 Fundamentos
+<details>
+<summary><strong>10 · SQL</strong></summary>
+
+#### 🔴 Essencial · Fundamentos
 
 - [ ] SELECT
 - [ ] INSERT
@@ -680,18 +801,14 @@ Exemplos:
 - [ ] GROUP BY
 - [ ] HAVING
 
-<br />
-
-### 🔴 JOIN
+#### 🔴 Essencial · JOIN
 
 - [ ] INNER JOIN
 - [ ] LEFT JOIN
 - [ ] RIGHT JOIN
 - [ ] FULL JOIN
 
-<br />
-
-### 🔴 Modelagem
+#### 🔴 Essencial · Modelagem
 
 - [ ] Primary Key
 - [ ] Foreign Key
@@ -700,9 +817,7 @@ Exemplos:
 - [ ] Normalização
 - [ ] Relacionamentos
 
-<br />
-
-### 🔴 Performance
+#### 🔴 Essencial · Performance
 
 - [ ] Index
 - [ ] Execution Plan
@@ -710,9 +825,7 @@ Exemplos:
 - [ ] Query Performance
 - [ ] N+1 Queries
 
-<br />
-
-### 🔴 Transactions
+#### 🔴 Essencial · Transactions
 
 - [ ] ACID
 - [ ] Commit
@@ -721,13 +834,14 @@ Exemplos:
 - [ ] Locks
 - [ ] Deadlocks
 
-<br />
+</details>
 
----
+<a id="modulo-11"></a>
 
-## 11. Bancos de Dados
+<details>
+<summary><strong>11 · Bancos de Dados</strong></summary>
 
-### 🔴 Relacionais
+#### 🔴 Essencial · Relacionais
 
 Aprender pelo menos um muito bem:
 
@@ -740,18 +854,16 @@ Conhecer:
 - [ ] MariaDB
 - [ ] Oracle
 
-<br />
-
-### 🟠 NoSQL
+#### 🟠 Importante · NoSQL
 
 - [ ] MongoDB
 - [ ] Redis
 - [ ] Cosmos DB
 - [ ] DynamoDB
 
-### 🟠 Search Engines / Full-Text Search
+#### 🟠 Importante · Search Engines / Full-Text Search
 
-#### Conceitos
+##### Conceitos
 
 - [ ] Full-Text Search
 - [ ] Inverted Index
@@ -760,7 +872,7 @@ Conhecer:
 - [ ] Indexação
 - [ ] Sincronização entre banco e índice
 
-#### Ferramentas
+##### Ferramentas
 
 Conhecer pelo menos uma:
 
@@ -771,13 +883,14 @@ Conhecer pelo menos uma:
 > [!TIP]
 > Mais importante do que decorar bancos e ferramentas diferentes é entender **quando usar SQL, NoSQL, cache ou um mecanismo de busca**.
 
-<br />
+</details>
 
----
+<a id="modulo-12"></a>
 
-## 12. Entity Framework Core 10
+<details>
+<summary><strong>12 · Entity Framework Core 10</strong></summary>
 
-### 🔴 Fundamentos
+#### 🔴 Essencial · Fundamentos
 
 - [ ] DbContext
 - [ ] DbSet
@@ -786,17 +899,13 @@ Conhecer pelo menos uma:
 - [ ] Fluent API
 - [ ] Migrations
 
-<br />
-
-### 🔴 Relacionamentos
+#### 🔴 Essencial · Relacionamentos
 
 - [ ] One-to-One
 - [ ] One-to-Many
 - [ ] Many-to-Many
 
-<br />
-
-### 🔴 Queries
+#### 🔴 Essencial · Queries
 
 - [ ] LINQ to Entities
 - [ ] Include
@@ -805,17 +914,13 @@ Conhecer pelo menos uma:
 - [ ] Tracking
 - [ ] AsNoTracking
 
-<br />
-
-### 🟠 Loading
+#### 🟠 Importante · Loading
 
 - [ ] Eager Loading
 - [ ] Explicit Loading
 - [ ] Lazy Loading
 
-<br />
-
-### 🔴 Performance
+#### 🔴 Essencial · Performance
 
 - [ ] N+1
 - [ ] Projection
@@ -827,9 +932,7 @@ Conhecer pelo menos uma:
 - [ ] ExecuteDelete / ExecuteDeleteAsync
 - [ ] Bulk Operations com bibliotecas externas
 
-<br />
-
-### 🟠 Recursos avançados
+#### 🟠 Importante · Recursos avançados
 
 - [ ] Transactions
 - [ ] Optimistic Concurrency
@@ -839,13 +942,14 @@ Conhecer pelo menos uma:
 - [ ] Value Converters
 - [ ] Raw SQL
 
-<br />
+</details>
 
----
+<a id="modulo-13"></a>
 
-## 13. Dapper
+<details>
+<summary><strong>13 · Dapper</strong></summary>
 
-### 🟠 Importante
+#### 🟠 Importante
 
 - [ ] Query
 - [ ] QueryAsync
@@ -865,17 +969,20 @@ Dapper
 ADO.NET
 ```
 
-<br />
+</details>
 
----
+<a id="qualidade-e-arquitetura"></a>
 
-# 🧠 Qualidade e Arquitetura
+### 🧠 5. Qualidade e arquitetura
 
----
+Melhore design, coesão e manutenibilidade antes de avançar para estilos arquiteturais complexos.
 
-## 14. Clean Code
+<a id="modulo-14"></a>
 
-### 🔴 Essencial
+<details>
+<summary><strong>14 · Clean Code</strong></summary>
+
+#### 🔴 Essencial
 
 - [ ] Nomes claros
 - [ ] Métodos pequenos
@@ -889,7 +996,7 @@ Conhecer:
 - [ ] KISS
 - [ ] YAGNI
 
-### 🟠 Code Quality e Static Analysis
+#### 🟠 Importante · Code Quality e Static Analysis
 
 - [ ] `.editorconfig`
 - [ ] Roslyn Analyzers
@@ -900,13 +1007,14 @@ Conhecer:
 - [ ] Code Analysis
 - [ ] Dependency Vulnerability Scanning
 
-<br />
+</details>
 
----
+<a id="modulo-15"></a>
 
-## 15. SOLID
+<details>
+<summary><strong>15 · SOLID</strong></summary>
 
-### 🔴 Essencial
+#### 🔴 Essencial
 
 - [ ] Single Responsibility Principle
 - [ ] Open/Closed Principle
@@ -917,27 +1025,28 @@ Conhecer:
 > [!TIP]
 > O objetivo não é decorar as letras do SOLID. O objetivo é entender **qual problema cada princípio tenta resolver**.
 
-<br />
+</details>
 
----
+<a id="modulo-16"></a>
 
-## 16. Design Patterns
+<details>
+<summary><strong>16 · Design Patterns</strong></summary>
 
-### 🟠 Creational
+#### 🟠 Importante · Creational
 
 - [ ] Factory
 - [ ] Abstract Factory
 - [ ] Builder
 - [ ] Singleton
 
-### 🟠 Structural
+#### 🟠 Importante · Structural
 
 - [ ] Adapter
 - [ ] Decorator
 - [ ] Facade
 - [ ] Proxy
 
-### 🟠 Behavioral
+#### 🟠 Importante · Behavioral
 
 - [ ] Strategy
 - [ ] Chain of Responsibility
@@ -948,20 +1057,21 @@ Conhecer:
 > [!NOTE]
 > Não utilize Design Patterns apenas porque eles existem. Utilize-os quando houver um problema que justifique sua utilização.
 
-<br />
+</details>
 
----
+<a id="modulo-17"></a>
 
-## 17. Arquitetura
+<details>
+<summary><strong>17 · Arquitetura</strong></summary>
 
-### 🔴 Essencial
+#### 🔴 Essencial
 
 - [ ] Separation of Concerns
 - [ ] Layered Architecture
 - [ ] Dependency Rule
 - [ ] Modularização
 
-### 🟠 Importante
+#### 🟠 Importante
 
 - [ ] Clean Architecture
 - [ ] Onion Architecture
@@ -969,20 +1079,21 @@ Conhecer:
 - [ ] Vertical Slice Architecture
 - [ ] Modular Monolith
 
-### ⚪ Avançado
+#### ⚪ Avançado
 
 - [ ] Domain-Driven Design
 - [ ] CQRS
 - [ ] Event Driven Architecture
 - [ ] Event Sourcing
 
-<br />
+</details>
 
----
+<a id="modulo-18"></a>
 
-## 18. Domain-Driven Design
+<details>
+<summary><strong>18 · Domain-Driven Design</strong></summary>
 
-### ⚪ Avançado
+#### ⚪ Avançado
 
 - [ ] Domain
 - [ ] Subdomain
@@ -996,17 +1107,20 @@ Conhecer:
 - [ ] Domain Event
 - [ ] Repository
 
-<br />
+</details>
 
----
+<a id="testes"></a>
 
-# 🧪 Testes
+### 🧪 6. Testes
 
----
+Valide comportamento, integrações, contratos, arquitetura e performance com testes automatizados.
 
-## 19. Testes Automatizados
+<a id="modulo-19"></a>
 
-### 🔴 Unit Tests
+<details>
+<summary><strong>19 · Testes Automatizados</strong></summary>
+
+#### 🔴 Essencial · Unit Tests
 
 Escolha inicialmente um framework:
 
@@ -1017,9 +1131,7 @@ Também existem:
 - NUnit
 - MSTest
 
-<br />
-
-### 🔴 Conceitos
+#### 🔴 Essencial · Conceitos
 
 - [ ] Arrange / Act / Assert
 - [ ] Test Isolation
@@ -1028,9 +1140,7 @@ Também existem:
 - [ ] Stub
 - [ ] Fake
 
-<br />
-
-### 🟠 Mocking
+#### 🟠 Importante · Mocking
 
 Escolha um:
 
@@ -1038,75 +1148,73 @@ Escolha um:
 - [ ] NSubstitute
 - [ ] FakeItEasy
 
-<br />
-
-### 🟠 Assertions
+#### 🟠 Importante · Assertions
 
 - [ ] FluentAssertions
 
-### 🟠 Fake Data
+> [!NOTE]
+> Verifique a [licença do Fluent Assertions](https://fluentassertions.com/introduction) antes de adotá-lo em uso comercial.
+
+#### 🟠 Importante · Fake Data
 
 - [ ] Bogus
 - [ ] AutoFixture
 
-<br />
-
-### 🔴 Integration Tests
+#### 🔴 Essencial · Integration Tests
 
 - [ ] WebApplicationFactory
 - [ ] TestServer
 - [ ] Testcontainers
 - [ ] Respawn
 
-<br />
-
-### 🟠 Architecture Tests
+#### 🟠 Importante · Architecture Tests
 
 - [ ] NetArchTest
 - [ ] ArchUnitNET
 
-### ⚪ Snapshot Testing
+#### ⚪ Opcional · Snapshot Testing
 
 - [ ] Verify
 
-### 🟠 Contract Testing
+#### 🟠 Importante · Contract Testing
 
 - [ ] Consumer / Provider Contracts
 - [ ] Backward Compatibility
 - [ ] API Contract Testing
 
-### 🟠 E2E
+#### 🟠 Importante · E2E
 
 - [ ] Playwright
 - [ ] Selenium
 
-### 🟠 Performance Tests
+#### 🟠 Importante · Performance Tests
 
 - [ ] k6
 - [ ] JMeter
 - [ ] Bombardier
 - [ ] NBomber
 
-<br />
+</details>
 
----
+<a id="integracoes-e-resiliencia"></a>
 
-# 🔌 Integrações e Resiliência
+### 🔌 7. Integrações e resiliência
 
----
+Consuma serviços, trate falhas e escolha protocolos, mapeamento e processamento em background.
 
-## 20. API Clients e Comunicação
+<a id="modulo-20"></a>
 
-### 🔴 HttpClient
+<details>
+<summary><strong>20 · API Clients e Comunicação</strong></summary>
+
+#### 🔴 Essencial · HttpClient
 
 - [ ] HttpClient
-- [ ] HttpClientFactory
+- [ ] IHttpClientFactory
 - [ ] Typed Clients
 - [ ] Named Clients
 
-<br />
-
-### 🔴 Entender
+#### 🔴 Essencial · Entender
 
 - [ ] Connection Pool
 - [ ] Timeout
@@ -1114,38 +1222,44 @@ Escolha um:
 - [ ] Socket Exhaustion
 - [ ] CancellationToken
 
-<br />
+</details>
 
----
+<a id="modulo-21"></a>
 
-## 21. Resiliência
+<details>
+<summary><strong>21 · Resiliência</strong></summary>
 
-### 🔴 Essencial
+#### 🔴 Essencial
 
 - [ ] Timeout
 - [ ] Retry
 - [ ] Exponential Backoff
 - [ ] Circuit Breaker
 
-### 🟠 Importante
+#### 🟠 Importante
 
 - [ ] Rate Limiter
-- [ ] Bulkhead
+- [ ] Bulkhead / Concurrency Limiter
 - [ ] Fallback
 - [ ] Hedging
+- [ ] Jitter
 
 Conhecer:
 
 - [ ] Microsoft.Extensions.Http.Resilience
 - [ ] Polly
 
-<br />
+> [!IMPORTANT]
+> Retry só é seguro quando a operação tolera novas tentativas. Combine-o com idempotência, limites e cancelamento.
 
----
+</details>
 
-## 22. Idempotência
+<a id="modulo-22"></a>
 
-### 🔴 Essencial
+<details>
+<summary><strong>22 · Idempotência</strong></summary>
+
+#### 🔴 Essencial
 
 - [ ] Idempotency Key
 - [ ] Duplicate Requests
@@ -1165,18 +1279,19 @@ Cliente envia novamente
 API NÃO pode processar duas vezes
 ```
 
-<br />
+</details>
 
----
+<a id="modulo-23"></a>
 
-## 23. Protocolos e Comunicação
+<details>
+<summary><strong>23 · Protocolos e Comunicação</strong></summary>
 
-### 🔴 REST
+#### 🔴 Essencial · REST
 
 - [ ] REST APIs
 - [ ] HttpClient
 
-### 🟠 gRPC
+#### 🟠 Importante · gRPC
 
 - [ ] Protocol Buffers
 - [ ] Unary
@@ -1184,7 +1299,7 @@ API NÃO pode processar duas vezes
 - [ ] Client Streaming
 - [ ] Bidirectional Streaming
 
-### 🟠 Real Time
+#### 🟠 Importante · Real Time
 
 - [ ] Server-Sent Events (SSE)
 - [ ] SignalR
@@ -1198,53 +1313,61 @@ WebSockets  → comunicação bidirecional
 SignalR     → abstração de comunicação em tempo real
 ```
 
-### ⚪ GraphQL
+#### ⚪ Opcional · GraphQL
 
 - [ ] GraphQL
-- [ ] HotChocolate
+- [ ] Hot Chocolate
 
-<br />
+</details>
 
----
+<a id="modulo-24"></a>
 
-## 24. Object Mapping
+<details>
+<summary><strong>24 · Object Mapping</strong></summary>
 
-### 🔴 Primeiro
+#### 🔴 Essencial · Primeiro
 
 - [ ] Manual Mapping
 
-### 🟠 Depois conheça
+#### 🟠 Importante · Depois conheça
 
 - [ ] Mapperly
 - [ ] AutoMapper
 
-<br />
+> [!NOTE]
+> Verifique a [licença do AutoMapper](https://docs.automapper.io/en/latest/License-configuration.html) antes de adotá-lo em uso comercial.
 
----
+</details>
 
-## 25. Background Processing
+<a id="modulo-25"></a>
 
-### 🔴 Nativo
+<details>
+<summary><strong>25 · Background Processing</strong></summary>
+
+#### 🔴 Essencial · Nativo
 
 - [ ] BackgroundService
 - [ ] IHostedService
 
-### 🟠 Schedulers
+#### 🟠 Importante · Schedulers
 
 - [ ] Hangfire
 - [ ] Quartz.NET
 
-<br />
+</details>
 
----
+<a id="performance-cache-e-operacao"></a>
 
-# ⚡ Performance e Cache
+### ⚡ 8. Performance, cache e operação
 
----
+Prepare aplicações para produção com cache, logs, observabilidade, health checks e concorrência.
 
-## 26. Cache
+<a id="modulo-26"></a>
 
-### 🔴 Conceitos
+<details>
+<summary><strong>26 · Cache</strong></summary>
+
+#### 🔴 Essencial · Conceitos
 
 - [ ] Cache
 - [ ] Cache Hit
@@ -1252,16 +1375,16 @@ SignalR     → abstração de comunicação em tempo real
 - [ ] TTL
 - [ ] Cache Invalidation
 
-### 🔴 Memory Cache
+#### 🔴 Essencial · Memory Cache
 
 - [ ] IMemoryCache
 
-### 🔴 Distributed Cache
+#### 🔴 Essencial · Distributed Cache
 
 - [ ] IDistributedCache
 - [ ] Redis
 
-### 🟠 Hybrid Cache
+#### 🟠 Importante · Hybrid Cache
 
 - [ ] HybridCache
 - [ ] L1 / L2 Cache
@@ -1269,27 +1392,28 @@ SignalR     → abstração de comunicação em tempo real
 - [ ] Serialization
 - [ ] Local + Distributed Cache
 
-### 🟠 Patterns
+#### 🟠 Importante · Patterns
 
 - [ ] Cache Aside
 - [ ] Read Through
 - [ ] Write Through
 - [ ] Write Behind
 
-### 🟠 HTTP Cache
+#### 🟠 Importante · HTTP Cache
 
 - [ ] Output Cache
 - [ ] Response Cache
 - [ ] ETag
 - [ ] Cache-Control
 
-<br />
+</details>
 
----
+<a id="modulo-27"></a>
 
-## 27. Logging
+<details>
+<summary><strong>27 · Logging</strong></summary>
 
-### 🔴 Essencial
+#### 🔴 Essencial
 
 - [ ] ILogger
 - [ ] Log Levels
@@ -1306,9 +1430,7 @@ Error
 Critical
 ```
 
-<br />
-
-### 🔴 Structured Logging
+#### 🔴 Essencial · Structured Logging
 
 Evitar:
 
@@ -1324,60 +1446,61 @@ _logger.LogInformation(
     userId);
 ```
 
-### 🟠 Frameworks
+#### 🟠 Importante · Frameworks
 
 - [ ] Serilog
 - [ ] NLog
 
-<br />
+</details>
 
----
+<a id="modulo-28"></a>
 
-## 28. Observabilidade
+<details>
+<summary><strong>28 · Observabilidade</strong></summary>
 
 > Os três pilares:
 >
 > **Logs • Metrics • Traces**
 
-### 🔴 Distributed Tracing
+#### 🔴 Essencial · Distributed Tracing
 
 - [ ] Trace
 - [ ] Span
 - [ ] TraceId
 - [ ] CorrelationId
 
-### 🟠 OpenTelemetry
+#### 🟠 Importante · OpenTelemetry
 
 - [ ] Instrumentation
 - [ ] Traces
 - [ ] Metrics
 - [ ] Exporters
 
-### 🟠 Ferramentas
+#### 🟠 Importante · Ferramentas
 
-#### Metrics
+##### Metrics
 
 - [ ] Prometheus
 - [ ] Grafana
 
-#### Logs
+##### Logs
 
 - [ ] Seq
 - [ ] Elasticsearch / ELK
 
-#### Tracing
+##### Tracing
 
 - [ ] OpenTelemetry
 - [ ] Jaeger
 - [ ] Zipkin
 
-#### APM
+##### APM
 
 - [ ] Application Insights
 - [ ] Datadog
 - [ ] Dynatrace
 
-### 🟠 Alerting
+#### 🟠 Importante · Alerting
 
 - [ ] Alert Rules
 - [ ] Thresholds
@@ -1386,27 +1509,28 @@ _logger.LogInformation(
 - [ ] Alert Fatigue
 - [ ] SLO-based Alerting
 
-#### Ferramentas
+##### Ferramentas
 
 - [ ] Grafana Alerting
 - [ ] Alertmanager
 - [ ] Azure Monitor Alerts
 - [ ] Datadog Monitors
 
-<br />
+</details>
 
----
+<a id="modulo-29"></a>
 
-## 29. Health Checks
+<details>
+<summary><strong>29 · Health Checks</strong></summary>
 
-### 🔴 Essencial
+#### 🔴 Essencial
 
 - [ ] Health Checks
 - [ ] Liveness
 - [ ] Readiness
 
 ```text
-API
+Readiness
  ├── SQL
  ├── Redis
  ├── Service Bus
@@ -1414,15 +1538,16 @@ API
 ```
 
 > [!IMPORTANT]
-> **Liveness ≠ Readiness**
+> **Liveness ≠ Readiness.** Liveness indica se o processo está vivo; readiness pode verificar se a aplicação está pronta para receber tráfego e acessar dependências críticas.
 
-<br />
+</details>
 
----
+<a id="modulo-30"></a>
 
-## 30. Performance
+<details>
+<summary><strong>30 · Performance</strong></summary>
 
-### 🔴 Essencial
+#### 🔴 Essencial
 
 - [ ] Async I/O
 - [ ] Connection Pooling
@@ -1432,14 +1557,14 @@ API
 - [ ] Compression
 - [ ] N+1 Problem
 
-### 🟠 Ferramentas
+#### 🟠 Importante · Ferramentas
 
 - [ ] BenchmarkDotNet
 - [ ] dotnet-counters
 - [ ] dotnet-trace
 - [ ] dotnet-dump
 
-### 🟠 Métricas
+#### 🟠 Importante · Métricas
 
 ```text
 Throughput
@@ -1454,13 +1579,14 @@ CPU
 Memory
 ```
 
-<br />
+</details>
 
----
+<a id="modulo-31"></a>
 
-## 31. Concorrência
+<details>
+<summary><strong>31 · Concorrência</strong></summary>
 
-### 🟠 Aplicação
+#### 🟠 Importante · Aplicação
 
 - [ ] Race Condition
 - [ ] Thread Safety
@@ -1469,23 +1595,26 @@ Memory
 - [ ] ConcurrentDictionary
 - [ ] Interlocked
 
-### 🟠 Concorrência distribuída
+#### 🟠 Importante · Concorrência distribuída
 
 - [ ] Optimistic Concurrency
 - [ ] Pessimistic Lock
 - [ ] Distributed Lock
 
-<br />
+</details>
 
----
+<a id="mensageria-e-sistemas-distribuidos"></a>
 
-# 📨 Mensageria e Sistemas Distribuídos
+### 📨 9. Mensageria e sistemas distribuídos
 
----
+Entenda entrega, duplicidade, idempotência e padrões para comunicação assíncrona confiável.
 
-## 32. Mensageria
+<a id="modulo-32"></a>
 
-### 🔴 Conceitos
+<details>
+<summary><strong>32 · Mensageria</strong></summary>
+
+#### 🔴 Essencial · Conceitos
 
 - [ ] Message
 - [ ] Queue
@@ -1495,7 +1624,7 @@ Memory
 - [ ] Publisher
 - [ ] Subscriber
 
-### 🔴 Garantias de entrega
+#### 🔴 Essencial · Garantias de entrega
 
 - [ ] At-most-once
 - [ ] At-least-once
@@ -1507,7 +1636,7 @@ Memory
 > Não trate **Exactly-once** como uma simples configuração do broker.
 > Em sistemas distribuídos, consumidores idempotentes e tratamento de duplicidade continuam sendo fundamentais.
 
-### 🔴 Problemas importantes
+#### 🔴 Essencial · Problemas importantes
 
 - [ ] Retry
 - [ ] Duplicate Messages
@@ -1516,7 +1645,7 @@ Memory
 - [ ] Poison Message
 - [ ] Ordering
 
-### 🟠 Message Brokers
+#### 🟠 Importante · Message Brokers
 
 Aprender pelo menos um:
 
@@ -1525,18 +1654,19 @@ Aprender pelo menos um:
 - [ ] Apache Kafka
 - [ ] Amazon SQS
 
-### 🟠 Message Bus
+#### 🟠 Importante · Message Bus
 
 - [ ] MassTransit
 - [ ] NServiceBus
 
-<br />
+</details>
 
----
+<a id="modulo-33"></a>
 
-## 33. Patterns para Sistemas Distribuídos
+<details>
+<summary><strong>33 · Patterns para Sistemas Distribuídos</strong></summary>
 
-### 🟠 Importante
+#### 🟠 Importante
 
 - [ ] Outbox Pattern
 - [ ] Inbox Pattern
@@ -1545,23 +1675,26 @@ Aprender pelo menos um:
 - [ ] Saga Pattern
 - [ ] Compensating Transaction
 
-### ⚪ Avançado
+#### ⚪ Avançado
 
 - [ ] Event Sourcing
 - [ ] CQRS
 - [ ] Change Data Capture
 
-<br />
+</details>
 
----
+<a id="devops"></a>
 
-# 📦 DevOps
+### 📦 10. DevOps e cloud
 
----
+Containerize, automatize builds e entregas e publique a aplicação em uma nuvem.
 
-## 34. Docker
+<a id="modulo-34"></a>
 
-### 🔴 Essencial
+<details>
+<summary><strong>34 · Docker</strong></summary>
+
+#### 🔴 Essencial
 
 - [ ] Container
 - [ ] Image
@@ -1574,9 +1707,7 @@ Aprender pelo menos um:
 - [ ] Environment Variables
 - [ ] Networks
 
-<br />
-
-### 🔴 Docker Compose
+#### 🔴 Essencial · Docker Compose
 
 Conseguir criar algo semelhante a:
 
@@ -1590,7 +1721,7 @@ Conseguir criar algo semelhante a:
  PostgreSQL   Redis
 ```
 
-### 🟠 Docker
+#### 🟠 Importante · Docker
 
 - [ ] Multi-stage Build
 - [ ] Health Check
@@ -1598,11 +1729,12 @@ Conseguir criar algo semelhante a:
 - [ ] Image Size
 - [ ] Container Security
 
-<br />
+</details>
 
----
+<a id="modulo-35"></a>
 
-## 35. CI/CD
+<details>
+<summary><strong>35 · CI/CD</strong></summary>
 
 ```text
 Commit
@@ -1622,7 +1754,7 @@ Push Image
 Deploy
 ```
 
-### 🟠 Ferramentas
+#### 🟠 Importante · Ferramentas
 
 Escolha pelo menos uma:
 
@@ -1630,7 +1762,7 @@ Escolha pelo menos uma:
 - [ ] Azure DevOps Pipelines
 - [ ] GitLab CI/CD
 
-### 🟠 Conceitos
+#### 🟠 Importante · Conceitos
 
 - [ ] Pipeline
 - [ ] Artifact
@@ -1640,15 +1772,16 @@ Escolha pelo menos uma:
 - [ ] Approval
 - [ ] Rollback
 
-<br />
+</details>
 
----
+<a id="modulo-36"></a>
 
-## 36. Cloud
+<details>
+<summary><strong>36 · Cloud</strong></summary>
 
 > Não é necessário conhecer todas as clouds. Escolha uma inicialmente.
 
-### 🟠 Azure
+#### 🟠 Importante · Azure
 
 - [ ] App Service
 - [ ] Container Apps
@@ -1661,7 +1794,7 @@ Escolha pelo menos uma:
 - [ ] Azure Container Registry
 - [ ] AKS
 
-### 🟠 AWS
+#### 🟠 Importante · AWS
 
 - [ ] EC2
 - [ ] ECS
@@ -1674,26 +1807,29 @@ Escolha pelo menos uma:
 - [ ] Secrets Manager
 - [ ] CloudWatch
 
-<br />
+</details>
 
----
+<a id="arquitetura-avancada"></a>
 
-# 🏗️ Arquitetura Avançada
+### 🏗️ 11. Arquitetura avançada
 
----
+Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orientadas a eventos.
 
-## 37. Microservices
+<a id="modulo-37"></a>
+
+<details>
+<summary><strong>37 · Microservices</strong></summary>
 
 > [!WARNING]
 > Aprenda a construir um **bom monólito** antes de construir microservices.
 
-### 🟠 Conceitos
+#### 🟠 Importante · Conceitos
 
 - [ ] Monolith
 - [ ] Modular Monolith
 - [ ] Microservices
 
-### 🟠 Microservices
+#### 🟠 Importante · Microservices
 
 - [ ] Service Boundaries
 - [ ] Database per Service
@@ -1704,17 +1840,18 @@ Escolha pelo menos uma:
 - [ ] API Gateway
 - [ ] Distributed Transactions
 
-### 🟠 API Gateway
+#### 🟠 Importante · API Gateway
 
 - [ ] YARP
 
-<br />
+</details>
 
----
+<a id="modulo-38"></a>
 
-## 38. Kubernetes
+<details>
+<summary><strong>38 · Kubernetes</strong></summary>
 
-### ⚪ Avançado
+#### ⚪ Avançado
 
 > Antes de Kubernetes, domine Docker.
 
@@ -1728,9 +1865,10 @@ Escolha pelo menos uma:
 - [ ] ConfigMap
 - [ ] Secret
 - [ ] Ingress
-- [ ] Persistent Volume
+- [ ] PersistentVolume (PV)
+- [ ] PersistentVolumeClaim (PVC)
 
-### ⚪ Kubernetes para aplicações
+#### ⚪ Opcional · Kubernetes para aplicações
 
 - [ ] Resource Requests
 - [ ] Resource Limits
@@ -1740,19 +1878,20 @@ Escolha pelo menos uma:
 - [ ] Rolling Update
 - [ ] Rollback
 
-### ⚪ Ferramentas
+#### ⚪ Opcional · Ferramentas
 
 - [ ] kubectl
 - [ ] Helm
 - [ ] K9s
 
-<br />
+</details>
 
----
+<a id="modulo-39"></a>
 
-## 39. Aspire
+<details>
+<summary><strong>39 · Aspire</strong></summary>
 
-### 🟠 Importante
+#### 🟠 Importante
 
 - [ ] Aspire CLI
 - [ ] Aspire Dashboard
@@ -1768,13 +1907,14 @@ Escolha pelo menos uma:
 
 > O Aspire pode facilitar o desenvolvimento, a orquestração local e a observabilidade de aplicações distribuídas.
 
-<br />
+</details>
 
----
+<a id="modulo-40"></a>
 
-## 40. System Design
+<details>
+<summary><strong>40 · System Design</strong></summary>
 
-### 🟠 Fundamentos
+#### 🟠 Importante · Fundamentos
 
 - [ ] Scalability
 - [ ] Availability
@@ -1783,43 +1923,44 @@ Escolha pelo menos uma:
 - [ ] Horizontal Scaling
 - [ ] Vertical Scaling
 
-### 🟠 Load Balancing
+#### 🟠 Importante · Load Balancing
 
 - [ ] Load Balancer
 - [ ] Reverse Proxy
 
-### 🟠 Dados
+#### 🟠 Importante · Dados
 
 - [ ] Replication
 - [ ] Partitioning
 - [ ] Sharding
 
-### 🟠 Consistência
+#### 🟠 Importante · Consistência
 
 - [ ] Strong Consistency
 - [ ] Eventual Consistency
 - [ ] CAP Theorem
 
-### 🟠 Disponibilidade
+#### 🟠 Importante · Disponibilidade
 
 - [ ] SLA
 - [ ] SLI
 - [ ] SLO
 
-### 🟠 Disaster Recovery
+#### 🟠 Importante · Disaster Recovery
 
 - [ ] Backup
 - [ ] Restore
 - [ ] RPO
 - [ ] RTO
 
-<br />
+</details>
 
----
+<a id="modulo-41"></a>
 
-## 41. API Design
+<details>
+<summary><strong>41 · API Design</strong></summary>
 
-### 🔴 Essencial
+#### 🔴 Essencial
 
 - [ ] Resource Naming
 - [ ] HTTP Semantics
@@ -1830,7 +1971,7 @@ Escolha pelo menos uma:
 - [ ] Validation
 - [ ] Error Responses
 
-### 🟠 Importante
+#### 🟠 Importante
 
 - [ ] API Versioning
 - [ ] Idempotency
@@ -1839,13 +1980,14 @@ Escolha pelo menos uma:
 - [ ] OpenAPI
 - [ ] Backward Compatibility
 
-<br />
+</details>
 
----
+<a id="modulo-42"></a>
 
-## 42. Arquitetura Orientada a Eventos
+<details>
+<summary><strong>42 · Arquitetura Orientada a Eventos</strong></summary>
 
-### ⚪ Avançado
+#### ⚪ Avançado
 
 - [ ] Event Notification
 - [ ] Event-Carried State Transfer
@@ -1853,17 +1995,20 @@ Escolha pelo menos uma:
 - [ ] Event Schema
 - [ ] Event Versioning
 
-<br />
+</details>
 
----
+<a id="ia-e-ferramentas-modernas"></a>
 
-# 🤖 IA e Ferramentas Modernas
+### 🤖 12. IA e ferramentas modernas
 
----
+Use assistentes com senso crítico e conheça os fundamentos para integrar LLMs às aplicações.
 
-## 43. IA e LLMs
+<a id="modulo-43"></a>
 
-### 🟠 Desenvolvimento
+<details>
+<summary><strong>43 · IA e LLMs</strong></summary>
+
+#### 🟠 Importante · Desenvolvimento
 
 - [ ] GitHub Copilot
 - [ ] ChatGPT
@@ -1876,13 +2021,13 @@ Também saber:
 - [ ] Não enviar secrets
 - [ ] Não confiar cegamente em código gerado
 
-### ⚪ Integração com aplicações
+#### ⚪ Opcional · Integração com aplicações
 
 - [ ] OpenAI .NET SDK
 - [ ] Semantic Kernel
 - [ ] Microsoft.Extensions.AI
 
-### ⚪ Conceitos
+#### ⚪ Opcional · Conceitos
 
 - [ ] LLM
 - [ ] Token
@@ -1893,186 +2038,33 @@ Também saber:
 - [ ] RAG
 - [ ] Tool Calling / Function Calling
 
-<br />
+</details>
 
 ---
 
-# 🎯 Como Evoluir na Carreira
+<a id="projeto-guia"></a>
 
----
+## 🧪 Projeto guia: evolua uma única aplicação
 
-## 44. O que NÃO precisa aprender de uma vez
+A melhor forma de percorrer o roadmap é aplicar cada conceito no **mesmo projeto**. A sugestão abaixo parte de uma API de e-commerce e a leva, passo a passo, até um cenário próximo de produção.
 
-> [!CAUTION]
-> Um roadmap representa uma **jornada**, não uma lista de pré-requisitos para conseguir um emprego.
-
-Você não precisa dominar tudo isto de uma vez:
-
-```text
-C#
-.NET
-SQL
-Redis
-MongoDB
-RabbitMQ
-Kafka
-Docker
-Kubernetes
-DDD
-CQRS
-Azure
-AWS
-Microservices
-OpenTelemetry
-Grafana
-...
+```mermaid
+flowchart TB
+  subgraph base["Construção da base"]
+    direction LR
+    A["01 · API base"] --> B["02 · Qualidade"] --> C["03 · Testes"] --> D["04 · Cache"] --> E["05 · Assíncrono"]
+  end
+  subgraph entrega["Entrega e evolução"]
+    direction LR
+    F["06 · Resiliência"] --> G["07 · Containers"] --> H["08 · Observabilidade"] --> I["09 · CI/CD"] --> J["10 · Arquitetura"]
+  end
+  E --> F
 ```
 
-<br />
+<a id="etapa-01"></a>
 
----
-
-# 🧭 Roadmap por Nível
-
-## 🟢 Desenvolvedor Júnior
-
-```text
-Git
- ↓
-HTTP
- ↓
-C#
- ↓
-.NET
- ↓
-ASP.NET Core
- ↓
-REST
- ↓
-SQL
- ↓
-Entity Framework
- ↓
-Dependency Injection
- ↓
-SOLID
- ↓
-Unit Tests
- ↓
-Integration Tests
-```
-
-### Checklist
-
-- [ ] Git
-- [ ] HTTP
-- [ ] C#
-- [ ] Orientação a Objetos
-- [ ] LINQ
-- [ ] Async / Await
-- [ ] ASP.NET Core
-- [ ] REST API
-- [ ] Dependency Injection
-- [ ] SQL
-- [ ] Entity Framework
-- [ ] Unit Tests
-- [ ] Integration Tests
-- [ ] Docker básico
-
-<br />
-
----
-
-## 🔵 Desenvolvedor Pleno
-
-```text
-Arquitetura
- ↓
-Redis
- ↓
-Mensageria
- ↓
-Resiliência
- ↓
-Docker
- ↓
-CI/CD
- ↓
-Observabilidade
- ↓
-Cloud
-```
-
-### Checklist
-
-- [ ] Clean Architecture / Vertical Slice
-- [ ] Design Patterns
-- [ ] Redis
-- [ ] HttpClientFactory
-- [ ] Resiliência
-- [ ] RabbitMQ / Service Bus / Kafka
-- [ ] MassTransit
-- [ ] Outbox
-- [ ] Docker
-- [ ] CI/CD
-- [ ] OpenTelemetry
-- [ ] Cloud
-- [ ] Performance
-
-<br />
-
----
-
-## 🟣 Desenvolvedor Sênior
-
-```text
-System Design
- ↓
-Sistemas Distribuídos
- ↓
-Arquitetura
- ↓
-Performance
- ↓
-Resiliência
- ↓
-Microservices
- ↓
-Kubernetes
- ↓
-Cloud
-```
-
-### Checklist
-
-- [ ] System Design
-- [ ] Distributed Systems
-- [ ] Eventual Consistency
-- [ ] Distributed Transactions
-- [ ] Saga
-- [ ] Outbox
-- [ ] Idempotência
-- [ ] Performance
-- [ ] Observabilidade
-- [ ] Microservices
-- [ ] Kubernetes
-- [ ] Cloud Architecture
-- [ ] Scalability
-- [ ] High Availability
-- [ ] Disaster Recovery
-- [ ] SLA / SLO / SLI
-
-<br />
-
----
-
-# 🧪 Projeto Sugerido para Aprendizado
-
-> A melhor forma de percorrer o roadmap é evoluir **o mesmo projeto** conforme novos assuntos forem estudados.
-
----
-
-## Etapa 01 — API Base
+<details>
+<summary><strong>Etapa 01 · API Base</strong></summary>
 
 Criar uma API de e-commerce:
 
@@ -2090,9 +2082,12 @@ Utilizando:
 - SQL
 - Entity Framework Core
 
-<br />
+</details>
 
-## Etapa 02 — Qualidade da API
+<a id="etapa-02"></a>
+
+<details>
+<summary><strong>Etapa 02 · Qualidade da API</strong></summary>
 
 Adicionar:
 
@@ -2104,9 +2099,12 @@ Adicionar:
 - OpenAPI
 - Logging
 
-<br />
+</details>
 
-## Etapa 03 — Testes
+<a id="etapa-03"></a>
+
+<details>
+<summary><strong>Etapa 03 · Testes</strong></summary>
 
 Adicionar:
 
@@ -2114,9 +2112,12 @@ Adicionar:
 - Integration Tests
 - Testcontainers
 
-<br />
+</details>
 
-## Etapa 04 — Cache
+<a id="etapa-04"></a>
+
+<details>
+<summary><strong>Etapa 04 · Cache</strong></summary>
 
 Adicionar Redis:
 
@@ -2134,9 +2135,12 @@ SIM       NÃO
 Return    Database
 ```
 
-<br />
+</details>
 
-## Etapa 05 — Processamento Assíncrono
+<a id="etapa-05"></a>
+
+<details>
+<summary><strong>Etapa 05 · Processamento Assíncrono</strong></summary>
 
 ```text
 Order API
@@ -2151,9 +2155,12 @@ Message Broker
     └────► Stock Worker
 ```
 
-<br />
+</details>
 
-## Etapa 06 — Resiliência
+<a id="etapa-06"></a>
+
+<details>
+<summary><strong>Etapa 06 · Resiliência</strong></summary>
 
 Adicionar:
 
@@ -2163,9 +2170,12 @@ Adicionar:
 - Dead Letter Queue
 - Outbox Pattern
 
-<br />
+</details>
 
-## Etapa 07 — Containers
+<a id="etapa-07"></a>
+
+<details>
+<summary><strong>Etapa 07 · Containers</strong></summary>
 
 ```text
 Docker Compose
@@ -2177,9 +2187,12 @@ Docker Compose
 └── RabbitMQ
 ```
 
-<br />
+</details>
 
-## Etapa 08 — Observabilidade
+<a id="etapa-08"></a>
+
+<details>
+<summary><strong>Etapa 08 · Observabilidade</strong></summary>
 
 ```text
 Application
@@ -2192,9 +2205,12 @@ OpenTelemetry
     └── Traces
 ```
 
-<br />
+</details>
 
-## Etapa 09 — CI/CD
+<a id="etapa-09"></a>
+
+<details>
+<summary><strong>Etapa 09 · CI/CD</strong></summary>
 
 ```text
 Git Push
@@ -2210,9 +2226,12 @@ Registry
 Deploy
 ```
 
-<br />
+</details>
 
-## Etapa 10 — Arquitetura Avançada
+<a id="etapa-10"></a>
+
+<details>
+<summary><strong>Etapa 10 · Arquitetura Avançada</strong></summary>
 
 Somente depois avaliar:
 
@@ -2224,18 +2243,49 @@ Microservices
 Kubernetes
 ```
 
-<br />
+</details>
 
 ---
 
-# 🏆 Objetivo Final
+<a id="principios-de-estudo"></a>
+
+## 🧠 Princípios de estudo
+
+- **Fundamentos antes de ferramentas.** Entenda o problema antes de escolher uma biblioteca ou serviço.
+- **Uma implementação por vez.** Aprenda bem um banco relacional, um broker e uma cloud antes de comparar alternativas.
+- **Complexidade sob demanda.** Um bom monólito costuma ser o melhor ponto de partida; microservices e Kubernetes entram quando há justificativa.
+- **Prática acima de coleção de tópicos.** Cada módulo deve produzir código, testes, documentação ou uma decisão registrada.
+
+> **Regra de ouro:** conceito → implementação → ferramenta.
+
+<details>
+<summary><strong>Perguntas para avaliar uma nova tecnologia</strong></summary>
+
+- Qual problema ela resolve?
+- Quando ela não deve ser utilizada?
+- Quais alternativas existem?
+- Como ela se comporta diante de falhas?
+- Qual custo operacional e de manutenção ela adiciona?
+
+</details>
+
+---
+
+<a id="resultado-esperado"></a>
+
+## 🏆 Resultado esperado
+
+Ao final da trilha, você deve conseguir construir, entregar e evoluir uma aplicação backend com decisões técnicas justificadas.
+
+<details>
+<summary><strong>Ver competências finais</strong></summary>
 
 Ao final da trilha, o desenvolvedor deve ser capaz de:
 
 - Projetar uma API
 - Implementar utilizando ASP.NET Core
 - Modelar um banco de dados
-- Utilizar Entity Framework
+- Utilizar Entity Framework Core
 - Criar testes automatizados
 - Implementar autenticação e autorização
 - Integrar APIs externas
@@ -2250,117 +2300,31 @@ Ao final da trilha, o desenvolvedor deve ser capaz de:
 - Entender sistemas distribuídos
 - Tomar decisões arquiteturais justificadas
 
-<br />
+</details>
 
 ---
 
-# ⚠️ Observação Importante
+<a id="referencias"></a>
 
-Não tente aprender todas as ferramentas deste roadmap.
+## 🤝 Referências, contribuição e licença
 
-Por exemplo:
+### Referência
 
-```text
-RabbitMQ
-Kafka
-Azure Service Bus
-Amazon SQS
-```
+Este roadmap foi inspirado e adaptado do projeto [ASP.NET Core Developer Roadmap](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap), de **Moien Tajik**. A estrutura desta versão foi reorganizada com foco didático, progressão de aprendizado e no ecossistema **.NET 10**.
 
-Todas estão relacionadas a mensageria, mas um desenvolvedor não precisa dominar todas para entender o conceito.
+Para aprofundar os conteúdos, priorize as fontes oficiais:
 
-Da mesma forma:
+- [.NET 10](https://learn.microsoft.com/dotnet/core/whats-new/dotnet-10/overview)
+- [C# 14](https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-14)
+- [ASP.NET Core 10](https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-10.0?view=aspnetcore-10.0)
+- [Entity Framework Core 10](https://learn.microsoft.com/ef/core/what-is-new/ef-core-10.0/whatsnew)
 
-```text
-SQL Server
-PostgreSQL
-MySQL
-Oracle
-```
+### Contribuição
 
-não precisam ser dominados simultaneamente.
+O roadmap não é uma lista definitiva. Sugestões e correções são bem-vindas: [abra uma issue](https://github.com/v1nifelix/aspnetcore-roadmap/issues/new) ou [envie um pull request](https://github.com/v1nifelix/aspnetcore-roadmap/pulls).
 
-> [!TIP]
-> Primeiro aprenda **os conceitos**.
->
-> Depois aprenda **uma implementação**.
->
-> Por fim, conheça **as alternativas**.
+### Licença
 
-<br />
+Esta adaptação é distribuída sob a licença [CC BY-NC-SA 4.0 — Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/), preservando a atribuição ao trabalho original e a indicação das alterações realizadas.
 
----
-
-# 🧠 Regra de Ouro
-
-<div align="center">
-
-### Conceito → Implementação → Ferramenta
-
-</div>
-
-Evite aprender apenas:
-
-```text
-Como usar RabbitMQ?
-```
-
-Procure entender primeiro:
-
-```text
-Por que existe mensageria?
-
-Qual problema ela resolve?
-
-Quando não devo utilizar?
-
-Quais garantias de entrega existem?
-
-Como lidar com falhas?
-
-Como lidar com mensagens duplicadas?
-```
-
-> Ferramentas mudam.
->
-> **Fundamentos permanecem.**
-
-<br />
-
----
-
-# 📚 Referência
-
-Este roadmap foi inspirado e adaptado a partir do projeto:
-
-**ASP.NET Core Developer Roadmap — Moien Tajik**
-
-A estrutura foi reorganizada com foco didático e ordem de aprendizado para formação de desenvolvedores Backend utilizando **C# 14, .NET 10 e ASP.NET Core 10**.
-
-<br />
-
----
-
-# ⭐ Contribuição
-
-Este roadmap não é uma lista definitiva.
-
-Tecnologias, frameworks e boas práticas evoluem constantemente.
-
-**Contribuições, sugestões e Pull Requests são bem-vindos.**
-
-<br />
-
----
-
-# 📄 Licença
-
-Este roadmap é uma adaptação do projeto **ASP.NET Core Developer Roadmap**, criado por **Moien Tajik**.
-
-Foram realizadas alterações na estrutura, no conteúdo, na ordem de aprendizado, nas tecnologias apresentadas e no foco didático.
-
-O trabalho original é distribuído sob a licença:
-
-**CC BY-NC-SA 4.0 — Attribution-NonCommercial-ShareAlike 4.0 International**
-
-Esta adaptação deve ser distribuída sob a mesma licença, mantendo a atribuição ao trabalho original e a indicação de que alterações foram realizadas.
+<p align="center"><sub>Ferramentas mudam. Fundamentos permanecem.</sub></p>
