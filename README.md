@@ -2,6 +2,7 @@
   <h1>🚀 ASP.NET Core Developer Roadmap</h1>
   <p><strong>Edição 2026 · .NET 10 · C# 14 · ASP.NET Core 10</strong></p>
   <p>Uma trilha progressiva e prática para desenvolver APIs e backends modernos com o ecossistema .NET.</p>
+  <p><strong>Português</strong> · <a href="./README.en.md">English</a></p>
   <p>
     <a href="https://learn.microsoft.com/dotnet/core/whats-new/dotnet-10/overview"><img alt=".NET 10" src="https://img.shields.io/badge/.NET-10-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"></a>
     <a href="https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-14"><img alt="C# 14" src="https://img.shields.io/badge/C%23-14-239120?style=flat-square&amp;logo=csharp&amp;logoColor=white"></a>
