@@ -76,6 +76,8 @@ flowchart TB
 <details>
 <summary><strong>Ver índice das macroáreas</strong></summary>
 
+<br />
+
 | Macroárea | Módulos |
 | :--- | :---: |
 | [🧱 Fundamentos](#fundamentos) | 01 |
@@ -114,6 +116,8 @@ Use estas trilhas como **pontos de entrada**, não como descrições rígidas de
 <details>
 <summary><strong>🟢 Desenvolvedor Júnior</strong> — construa uma base sólida e entregue sua primeira API completa.</summary>
 
+<br />
+
 **Checklist de referência**
 
 - [ ] Git
@@ -140,6 +144,8 @@ Use estas trilhas como **pontos de entrada**, não como descrições rígidas de
 <details>
 <summary><strong>🔵 Desenvolvedor Pleno</strong> — aprenda a evoluir, integrar e operar aplicações.</summary>
 
+<br />
+
 **Checklist de referência**
 
 - [ ] Clean Architecture / Vertical Slice
@@ -164,6 +170,8 @@ Use estas trilhas como **pontos de entrada**, não como descrições rígidas de
 
 <details>
 <summary><strong>🟣 Desenvolvedor Sênior</strong> — aprofunde decisões de arquitetura, escala e confiabilidade.</summary>
+
+<br />
 
 **Checklist de referência**
 
@@ -206,6 +214,8 @@ Construa a base comum a qualquer backend: Git, internet, HTTP, APIs, estruturas 
 
 <details>
 <summary><strong>01 · Fundamentos de Desenvolvimento</strong></summary>
+
+<br />
 
 > Antes de aprender .NET, é importante conhecer alguns fundamentos que independem de linguagem.
 
@@ -342,6 +352,8 @@ Aprenda C# moderno e entenda como SDK, runtime, CLI e gerenciamento de memória 
 
 <details>
 <summary><strong>02 · C# 14</strong></summary>
+
+<br />
 
 **🔴 Essencial · Fundamentos**
 
@@ -495,6 +507,8 @@ Assincronismo
 <details>
 <summary><strong>03 · Ecossistema .NET 10</strong></summary>
 
+<br />
+
 **🔴 Essencial · Conceitos**
 
 Entender a diferença entre:
@@ -593,6 +607,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 <details>
 <summary><strong>04 · ASP.NET Core 10</strong></summary>
 
+<br />
+
 **🔴 Essencial · Web API**
 
 - [ ] Criar uma Web API
@@ -632,6 +648,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 <details>
 <summary><strong>05 · Configuration</strong></summary>
 
+<br />
+
 **🔴 Essencial · Configurações**
 
 - [ ] appsettings.json
@@ -664,6 +682,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 
 <details>
 <summary><strong>06 · ASP.NET Core Pipeline</strong></summary>
+
+<br />
 
 **🔴 Essencial · Middleware**
 
@@ -704,6 +724,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 <details>
 <summary><strong>07 · OpenAPI e Documentação</strong></summary>
 
+<br />
+
 **🔴 Essencial · OpenAPI**
 
 - [ ] OpenAPI
@@ -738,6 +760,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 <details>
 <summary><strong>08 · Validação</strong></summary>
 
+<br />
+
 **🔴 Essencial · Validação nativa**
 
 - [ ] Validação de Request
@@ -766,6 +790,8 @@ Crie APIs com ASP.NET Core e domine configuração, pipeline, documentação, va
 
 <details>
 <summary><strong>09 · Segurança</strong></summary>
+
+<br />
 
 **🔴 Essencial · Autenticação e autorização**
 
@@ -824,6 +850,8 @@ Modele dados, escreva SQL e trabalhe com Entity Framework Core, Dapper e diferen
 <details>
 <summary><strong>10 · SQL</strong></summary>
 
+<br />
+
 **🔴 Essencial · Fundamentos**
 
 - [ ] SELECT
@@ -877,6 +905,8 @@ Modele dados, escreva SQL e trabalhe com Entity Framework Core, Dapper e diferen
 <details>
 <summary><strong>11 · Bancos de Dados</strong></summary>
 
+<br />
+
 **🔴 Essencial · Relacionais**
 
 Aprender pelo menos um muito bem:
@@ -927,6 +957,8 @@ Conhecer pelo menos uma:
 
 <details>
 <summary><strong>12 · Entity Framework Core 10</strong></summary>
+
+<br />
 
 **🔴 Essencial · Fundamentos**
 
@@ -989,6 +1021,8 @@ Conhecer pelo menos uma:
 <details>
 <summary><strong>13 · Dapper</strong></summary>
 
+<br />
+
 **🟠 Importante**
 
 - [ ] Query
@@ -1026,6 +1060,8 @@ Melhore design, coesão e manutenibilidade antes de avançar para estilos arquit
 <details>
 <summary><strong>14 · Clean Code</strong></summary>
 
+<br />
+
 **🔴 Essencial**
 
 - [ ] Nomes claros
@@ -1060,6 +1096,8 @@ Conhecer:
 <details>
 <summary><strong>15 · SOLID</strong></summary>
 
+<br />
+
 **🔴 Essencial**
 
 - [ ] Single Responsibility Principle
@@ -1079,6 +1117,8 @@ Conhecer:
 
 <details>
 <summary><strong>16 · Design Patterns</strong></summary>
+
+<br />
 
 **🟠 Importante · Creational**
 
@@ -1114,6 +1154,8 @@ Conhecer:
 <details>
 <summary><strong>17 · Arquitetura</strong></summary>
 
+<br />
+
 **🔴 Essencial**
 
 - [ ] Separation of Concerns
@@ -1145,6 +1187,8 @@ Conhecer:
 <details>
 <summary><strong>18 · Domain-Driven Design</strong></summary>
 
+<br />
+
 **⚪ Avançado**
 
 - [ ] Domain
@@ -1175,6 +1219,8 @@ Valide comportamento, integrações, contratos, arquitetura e performance com te
 
 <details>
 <summary><strong>19 · Testes Automatizados</strong></summary>
+
+<br />
 
 **🔴 Essencial · Unit Tests**
 
@@ -1267,6 +1313,8 @@ Consuma serviços, trate falhas e escolha protocolos, mapeamento e processamento
 <details>
 <summary><strong>20 · API Clients e Comunicação</strong></summary>
 
+<br />
+
 **🔴 Essencial · HttpClient**
 
 - [ ] HttpClient
@@ -1290,6 +1338,8 @@ Consuma serviços, trate falhas e escolha protocolos, mapeamento e processamento
 
 <details>
 <summary><strong>21 · Resiliência</strong></summary>
+
+<br />
 
 **🔴 Essencial**
 
@@ -1323,6 +1373,8 @@ Conhecer:
 <details>
 <summary><strong>22 · Idempotência</strong></summary>
 
+<br />
+
 **🔴 Essencial**
 
 - [ ] Idempotency Key
@@ -1351,6 +1403,8 @@ API NÃO pode processar duas vezes
 
 <details>
 <summary><strong>23 · Protocolos e Comunicação</strong></summary>
+
+<br />
 
 **🔴 Essencial · REST**
 
@@ -1393,6 +1447,8 @@ SignalR     → abstração de comunicação em tempo real
 <details>
 <summary><strong>24 · Object Mapping</strong></summary>
 
+<br />
+
 **🔴 Essencial · Primeiro**
 
 - [ ] Manual Mapping
@@ -1413,6 +1469,8 @@ SignalR     → abstração de comunicação em tempo real
 
 <details>
 <summary><strong>25 · Background Processing</strong></summary>
+
+<br />
 
 **🔴 Essencial · Nativo**
 
@@ -1440,6 +1498,8 @@ Prepare aplicações para produção com cache, logs, observabilidade, health ch
 
 <details>
 <summary><strong>26 · Cache</strong></summary>
+
+<br />
 
 **🔴 Essencial · Conceitos**
 
@@ -1489,6 +1549,8 @@ Prepare aplicações para produção com cache, logs, observabilidade, health ch
 <details>
 <summary><strong>27 · Logging</strong></summary>
 
+<br />
+
 **🔴 Essencial**
 
 - [ ] ILogger
@@ -1535,6 +1597,8 @@ _logger.LogInformation(
 
 <details>
 <summary><strong>28 · Observabilidade</strong></summary>
+
+<br />
 
 > Os três pilares:
 >
@@ -1603,6 +1667,8 @@ _logger.LogInformation(
 <details>
 <summary><strong>29 · Health Checks</strong></summary>
 
+<br />
+
 **🔴 Essencial**
 
 - [ ] Health Checks
@@ -1628,6 +1694,8 @@ Readiness
 
 <details>
 <summary><strong>30 · Performance</strong></summary>
+
+<br />
 
 **🔴 Essencial**
 
@@ -1670,6 +1738,8 @@ Memory
 <details>
 <summary><strong>31 · Concorrência</strong></summary>
 
+<br />
+
 **🟠 Importante · Aplicação**
 
 - [ ] Race Condition
@@ -1701,6 +1771,8 @@ Entenda entrega, duplicidade, idempotência e padrões para comunicação assín
 
 <details>
 <summary><strong>32 · Mensageria</strong></summary>
+
+<br />
 
 **🔴 Essencial · Conceitos**
 
@@ -1756,6 +1828,8 @@ Aprender pelo menos um:
 <details>
 <summary><strong>33 · Patterns para Sistemas Distribuídos</strong></summary>
 
+<br />
+
 **🟠 Importante**
 
 - [ ] Outbox Pattern
@@ -1787,6 +1861,8 @@ Containerize, automatize builds e entregas e publique a aplicação em uma nuvem
 
 <details>
 <summary><strong>34 · Docker</strong></summary>
+
+<br />
 
 **🔴 Essencial**
 
@@ -1831,6 +1907,8 @@ Conseguir criar algo semelhante a:
 
 <details>
 <summary><strong>35 · CI/CD</strong></summary>
+
+<br />
 
 ```text
 Commit
@@ -1877,6 +1955,8 @@ Escolha pelo menos uma:
 <details>
 <summary><strong>36 · Cloud</strong></summary>
 
+<br />
+
 > Não é necessário conhecer todas as clouds. Escolha uma inicialmente.
 
 **🟠 Importante · Azure**
@@ -1922,6 +2002,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 <details>
 <summary><strong>37 · Microservices</strong></summary>
 
+<br />
+
 > [!WARNING]
 > Aprenda a construir um **bom monólito** antes de construir microservices.
 
@@ -1954,6 +2036,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 
 <details>
 <summary><strong>38 · Kubernetes</strong></summary>
+
+<br />
 
 **⚪ Avançado**
 
@@ -1997,6 +2081,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 <details>
 <summary><strong>39 · Aspire</strong></summary>
 
+<br />
+
 **🟠 Importante**
 
 - [ ] Aspire CLI
@@ -2021,6 +2107,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 
 <details>
 <summary><strong>40 · System Design</strong></summary>
+
+<br />
 
 **🟠 Importante · Fundamentos**
 
@@ -2070,6 +2158,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 <details>
 <summary><strong>41 · API Design</strong></summary>
 
+<br />
+
 **🔴 Essencial**
 
 - [ ] Resource Naming
@@ -2099,6 +2189,8 @@ Aprofunde system design, microservices, Kubernetes, Aspire e arquiteturas orient
 <details>
 <summary><strong>42 · Arquitetura Orientada a Eventos</strong></summary>
 
+<br />
+
 **⚪ Avançado**
 
 - [ ] Event Notification
@@ -2123,6 +2215,8 @@ Use assistentes com senso crítico e conheça os fundamentos para integrar LLMs 
 
 <details>
 <summary><strong>43 · IA e LLMs</strong></summary>
+
+<br />
 
 **🟠 Importante · Desenvolvimento**
 
@@ -2184,6 +2278,8 @@ flowchart TB
 <details>
 <summary><strong>Etapa 01 · API Base</strong></summary>
 
+<br />
+
 Criar uma API de e-commerce:
 
 ```text
@@ -2209,6 +2305,8 @@ Utilizando:
 <details>
 <summary><strong>Etapa 02 · Qualidade da API</strong></summary>
 
+<br />
+
 Adicionar:
 
 - Validation
@@ -2228,6 +2326,8 @@ Adicionar:
 <details>
 <summary><strong>Etapa 03 · Testes</strong></summary>
 
+<br />
+
 Adicionar:
 
 - Unit Tests
@@ -2242,6 +2342,8 @@ Adicionar:
 
 <details>
 <summary><strong>Etapa 04 · Cache</strong></summary>
+
+<br />
 
 Adicionar Redis:
 
@@ -2268,6 +2370,8 @@ Return    Database
 <details>
 <summary><strong>Etapa 05 · Processamento Assíncrono</strong></summary>
 
+<br />
+
 ```text
 Order API
     │
@@ -2290,6 +2394,8 @@ Message Broker
 <details>
 <summary><strong>Etapa 06 · Resiliência</strong></summary>
 
+<br />
+
 Adicionar:
 
 - Idempotência
@@ -2306,6 +2412,8 @@ Adicionar:
 
 <details>
 <summary><strong>Etapa 07 · Containers</strong></summary>
+
+<br />
 
 ```text
 Docker Compose
@@ -2326,6 +2434,8 @@ Docker Compose
 <details>
 <summary><strong>Etapa 08 · Observabilidade</strong></summary>
 
+<br />
+
 ```text
 Application
     │
@@ -2345,6 +2455,8 @@ OpenTelemetry
 
 <details>
 <summary><strong>Etapa 09 · CI/CD</strong></summary>
+
+<br />
 
 ```text
 Git Push
@@ -2368,6 +2480,8 @@ Deploy
 
 <details>
 <summary><strong>Etapa 10 · Arquitetura Avançada</strong></summary>
+
+<br />
 
 Somente depois avaliar:
 
@@ -2399,6 +2513,8 @@ Kubernetes
 <details>
 <summary><strong>Perguntas para avaliar uma nova tecnologia</strong></summary>
 
+<br />
+
 - Qual problema ela resolve?
 - Quando ela não deve ser utilizada?
 - Quais alternativas existem?
@@ -2419,6 +2535,8 @@ Ao final da trilha, você deve conseguir construir, entregar e evoluir uma aplic
 
 <details>
 <summary><strong>Ver competências finais</strong></summary>
+
+<br />
 
 - Projetar uma API
 - Implementar utilizando ASP.NET Core
