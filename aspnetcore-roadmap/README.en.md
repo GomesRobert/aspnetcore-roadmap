@@ -121,7 +121,7 @@ Use these paths as **starting points**, not as rigid job-level descriptions. Pro
 
 **Reference checklist**
 
-- [✅] Git  <!-- Git e uma ferramenta de versionamento que permite que varias pessoas trabalhem  no mesmo projeto e ate na mesma branch. Podemos sempre esta voltando na versão anterior caso precise, mas nao ideal fazer isso.. So devemos tomar cuidado na hora de realizar um merge, pq a branch principal deve estar sempre atualizada e estável para evitar conflitos e garantir a integridade do projeto--> 
+- [✅] Git   Git e uma ferramenta de versionamento que permite que varias pessoas trabalhem  no mesmo projeto e ate na mesma branch. Podemos sempre esta voltando na versão anterior caso precise, mas nao ideal fazer isso.. So devemos tomar cuidado na hora de realizar um merge, pq a branch principal deve estar sempre atualizada e estável para evitar conflitos e garantir a integridade do projeto
 - [ ] HTTP
 - [ ] C#
 - [ ] Object-Oriented Programming
