@@ -122,8 +122,10 @@ Use these paths as **starting points**, not as rigid job-level descriptions. Pro
 **Reference checklist**
 
 - [✅] Git   Git e uma ferramenta de versionamento que permite que varias pessoas trabalhem  no mesmo projeto e ate na mesma branch. Podemos sempre esta voltando na versão anterior caso precise, mas nao ideal fazer isso.. So devemos tomar cuidado na hora de realizar um merge, pq a branch principal deve estar sempre atualizada e estável para evitar conflitos e garantir a integridade do projeto
+
 - [ ✅] HTTP  HTTP conexão entre o servidor e o usuario, o navegador envia uma requisição http para o servidor que recebe a solicitação, processa a requisição e retorna uma resposta. essa resposta pode conter uma imagem, uma pagina em html, etc.... os principais verbos sao GET,POST,PUT e DELET. esse outros mas esses sao os mais ultilizado
 Tem os codigos de status  divido em categoria com 2xx,3xx,4xx,5xx. Os amis ultilizado sao 2xx(status de sucesso), 4xx(erro do cliente) e 5xx(erro 'do servidor).
+Faço bastante usso dos verbo utilizando uma ferramenta chamada N8N, Por ela que faço requisições via post, get e put
 - [ ] C#
 - [ ] Object-Oriented Programming
 - [ ] LINQ
