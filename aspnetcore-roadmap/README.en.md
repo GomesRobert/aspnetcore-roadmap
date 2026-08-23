@@ -126,8 +126,8 @@ Use these paths as **starting points**, not as rigid job-level descriptions. Pro
 - [ ✅] HTTP  HTTP conexão entre o servidor e o usuario, o navegador envia uma requisição http para o servidor que recebe a solicitação, processa a requisição e retorna uma resposta. essa resposta pode conter uma imagem, uma pagina em html, etc.... os principais verbos sao GET,POST,PUT e DELET. esse outros mas esses sao os mais ultilizado
 Tem os codigos de status  divido em categoria com 2xx,3xx,4xx,5xx. Os amis ultilizado sao 2xx(status de sucesso), 4xx(erro do cliente) e 5xx(erro 'do servidor).
 Faço bastante usso dos verbo utilizando uma ferramenta chamada N8N, Por ela que faço requisições via post, get e put
-- [ ] C#
-- [ ] Object-Oriented Programming
+- [ ✅] C#
+- [ ✅] Object-Oriented Programming
 - [ ] LINQ
 - [ ] Async / Await
 - [ ] ASP.NET Core
@@ -361,33 +361,33 @@ Learn modern C# and understand how the SDK, runtime, CLI, and memory management 
 
 **🔴 Essential · Fundamentals**
 
-- [ ] Variables
-- [ ] Primitive Types
-- [ ] Value Types
-- [ ] Reference Types
-- [ ] Nullable Types
-- [ ] Nullable Reference Types
-- [ ] Operators
-- [ ] Conditionals
-- [ ] Loops
-- [ ] Methods
-- [ ] Parameters
-- [ ] Named Arguments
-- [ ] Optional Parameters
+- [✅] Variables
+- [✅] Primitive Types
+- [✅] Value Types
+- [✅] Reference Types
+- [✅] Nullable Types
+- [✅] Nullable Reference Types
+- [✅] Operators
+- [✅] Conditionals
+- [✅] Loops
+- [✅] Methods
+- [✅] Parameters
+- [✅] Named Arguments
+- [✅] Optional Parameters
 
 **🔴 Essential · Object-Oriented Programming**
 
-- [ ] Classes
-- [ ] Objects
-- [ ] Constructors
-- [ ] Properties
-- [ ] Fields
-- [ ] Encapsulation
-- [ ] Inheritance
-- [ ] Polymorphism
-- [ ] Abstraction
-- [ ] Interfaces
-- [ ] Abstract Classes
+- [✅] Classes
+- [✅] Objects
+- [✅] Constructors
+- [✅] Properties
+- [✅] Fields
+- [✅] Encapsulation
+- [✅] Inheritance
+- [✅] Polymorphism
+- [✅] Abstraction
+- [✅] Interfaces
+- [✅] Abstract Classes
 
 **🔴 Essential · Collections**
 

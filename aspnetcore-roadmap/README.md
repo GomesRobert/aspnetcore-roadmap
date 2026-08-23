@@ -123,8 +123,8 @@ Use estas trilhas como **pontos de entrada**, não como descrições rígidas de
 
 - [ ] Git
 - [ ] HTTP
-- [ ] C#
-- [ ] Orientação a Objetos
+- [✅] C#
+- [✅] Orientação a Objetos
 - [ ] LINQ
 - [ ] Async / Await
 - [ ] ASP.NET Core
@@ -358,33 +358,33 @@ Aprenda C# moderno e entenda como SDK, runtime, CLI e gerenciamento de memória 
 
 **🔴 Essencial · Fundamentos**
 
-- [ ] Variáveis
-- [ ] Tipos primitivos
-- [ ] Value Types
-- [ ] Reference Types
-- [ ] Nullable Types
-- [ ] Nullable Reference Types
-- [ ] Operadores
-- [ ] Condicionais
-- [ ] Loops
-- [ ] Métodos
-- [ ] Parâmetros
-- [ ] Named Arguments
-- [ ] Optional Parameters
+- [✅] Variáveis
+- [✅] Tipos primitivos
+- [✅] Value Types
+- [✅] Reference Types
+- [✅] Nullable Types
+- [✅] Nullable Reference Types
+- [✅] Operadores
+- [✅] Condicionais
+- [✅] Loops
+- [✅] Métodos
+- [✅] Parâmetros
+- [✅] Named Arguments
+- [✅] Optional Parameters
 
 **🔴 Essencial · Orientação a Objetos**
 
-- [ ] Classes
-- [ ] Objetos
-- [ ] Construtores
-- [ ] Properties
-- [ ] Fields
-- [ ] Encapsulamento
-- [ ] Herança
-- [ ] Polimorfismo
-- [ ] Abstração
-- [ ] Interfaces
-- [ ] Classes abstratas
+- [✅] Classes
+- [✅] Objetos
+- [✅] Construtores
+- [✅] Properties
+- [✅] Fields
+- [✅] Encapsulamento
+- [✅] Herança
+- [✅] Polimorfismo
+- [✅] Abstração
+- [✅] Interfaces
+- [✅] Classes abstratas
 
 **🔴 Essencial · Collections**
 
