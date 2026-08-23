@@ -27,3 +27,4 @@ This is **not a software project** — it's a personal ASP.NET Core / .NET 10 le
 ## Working across the two READMEs
 
 When the user asks to add/change a topic in the canonical roadmap, mirror the edit into **both** `README.md` and `README.en.md` (translating, not copying verbatim). Do not propagate canonical-roadmap edits into `aspnetcore-roadmap/README*.md` automatically — that pair is the user's personal checklist and may intentionally lag behind or diverge (e.g., partially checked off, annotated with notes).
+.
